@@ -9,7 +9,7 @@ fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed)
     data.items.slice(0, 10).forEach(ep => {
 
         // cerca l'id episodio nel link Spreaker
-        const id = ep.link.match(/--(\d+)$/)[1];
+        const id = ep.guid.match(/(\d+)$/)[1];
 
         const elemento = document.createElement("div");
 
