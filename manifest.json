@@ -1,0 +1,16 @@
+{
+  "name": "Dialoghi Radio",
+  "short_name": "Dialoghi Radio",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#222222",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "icona.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
