@@ -17,15 +17,12 @@ fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed)
 
             <h3>🎙 ${ep.title}</h3>
 
-            <a class="spreaker-player"
-            href="${ep.link}"
-            data-resource="episode_id=${id}"
-            data-width="100%"
-            data-height="200px"
-            data-theme="light"
-            data-playlist="false">
-            Ascolta
-            </a>
+            <iframe 
+            src="https://widget.spreaker.com/player?episode_id=${id}&theme=light"
+            width="100%" 
+            height="200px" 
+            frameborder="0">
+            </iframe>
 
             <hr>
 
