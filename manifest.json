@@ -1,16 +1,18 @@
 {
-  "name": "Dialoghi Radio",
+  "name": "Dialoghi Radio - La Siesta del Pane Quotidiano",
   "short_name": "Dialoghi Radio",
-  "start_url": "index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#222222",
+  "description": "Ascolta Dialoghi Radio e La Siesta del Pane Quotidiano",
   "lang": "it",
   "icons": [
     {
       "src": "icona.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
