@@ -8,8 +8,8 @@ fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed)
 
     data.items.slice(0, 10).forEach(ep => {
 
-        // prende ID corretto da guid
-        const id = ep.guid.split("/").pop();
+        // cerca l'id episodio nel link Spreaker
+        const id = ep.link.match(/--(\d+)$/)[1];
 
         const elemento = document.createElement("div");
 
@@ -17,11 +17,12 @@ fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed)
 
             <h3>🎙 ${ep.title}</h3>
 
-            <iframe 
+            <iframe
             src="https://widget.spreaker.com/player?episode_id=${id}&theme=light"
-            width="100%" 
-            height="200px" 
-            frameborder="0">
+            width="100%"
+            height="200"
+            frameborder="0"
+            allow="autoplay">
             </iframe>
 
             <hr>
@@ -31,12 +32,6 @@ fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed)
         lista.appendChild(elemento);
 
     });
-
-    setTimeout(() => {
-    if (window.Spreaker && window.Spreaker.init) {
-        window.Spreaker.init();
-    }
-    }, 500);
 
 })
 .catch(error => {
