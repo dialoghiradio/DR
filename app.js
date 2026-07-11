@@ -9,7 +9,8 @@ fetch(feed)
 
     const items = [...xml.querySelectorAll("item")];
 
-
+    console.log(items.length);
+    console.log(items[0]);
     // ===== PERCORSO BIBLICO =====
 
     const bibbia = document.getElementById("percorso-biblico");
