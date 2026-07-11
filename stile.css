@@ -82,14 +82,16 @@ footer {
 
 .bottone {
     display: inline-block;
-    padding: 14px 25px;
+    width: 220px;
+    text-align: center;
+    padding: 14px 20px;
     background: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 30px;
     font-size: 18px;
     font-weight: bold;
-    margin: 15px 0;
+    margin: 10px;
 }
 
 .bottone:hover {
@@ -102,6 +104,16 @@ footer {
         width: 70px;
         display: block;
         margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .bottone {
+        display: block;
+        width: 80%;
+        margin: 15px auto;
     }
 
 }
