@@ -1,6 +1,6 @@
 const feed = "https://www.spreaker.com/show/6033837/episodes/feed";
 
-fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed))
+fetch("https://api.rss2json.com/v1/api.json?count=1000&rss_url=" + encodeURIComponent(feed))
 .then(response => response.json())
 .then(data => {
 
