@@ -126,3 +126,10 @@ h2 {
 #episodi div {
     margin-bottom: 25px;
 }
+
+.versione {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
