@@ -1,25 +1,33 @@
-const feed = "https://www.spreaker.com/show/6033837/episodes/feed";
+const feed = "https://billowing-silence-9fc4.teisasa3.workers.dev/";
 
-fetch("https://api.rss2json.com/v1/api.json?count=1000&rss_url=" + encodeURIComponent(feed))
-.then(response => response.json())
-.then(data => {
+fetch(feed)
+.then(response => response.text())
+.then(str => {
+
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(str, "text/xml");
+
+    const items = [...xml.querySelectorAll("item")];
 
 
     // ===== PERCORSO BIBLICO =====
 
     const bibbia = document.getElementById("percorso-biblico");
 
-    data.items.forEach(ep => {
+    items.forEach(ep => {
 
-        if (ep.title.includes("[Percorso Biblico]")) {
+        const titolo = ep.querySelector("title").textContent;
+        const link = ep.querySelector("link").textContent;
 
-            const id = ep.guid.match(/(\d+)$/)[1];
+        if (titolo.includes("[Percorso Biblico]")) {
+
+            const id = link.match(/--(\d+)$/)[1];
 
             const elemento = document.createElement("div");
 
             elemento.innerHTML = `
 
-                <h3>📖 ${ep.title.replace("[Percorso Biblico] ", "")}</h3>
+                <h3>📖 ${titolo.replace("[Percorso Biblico] ", "")}</h3>
 
                 <iframe
                 src="https://widget.spreaker.com/player?episode_id=${id}&theme=light"
@@ -45,15 +53,18 @@ fetch("https://api.rss2json.com/v1/api.json?count=1000&rss_url=" + encodeURIComp
 
     const lista = document.getElementById("episodi");
 
-    data.items.slice(0, 10).forEach(ep => {
+    items.slice(0,10).forEach(ep => {
 
-        const id = ep.guid.match(/(\d+)$/)[1];
+        const titolo = ep.querySelector("title").textContent;
+        const link = ep.querySelector("link").textContent;
+
+        const id = link.match(/--(\d+)$/)[1];
 
         const elemento = document.createElement("div");
 
         elemento.innerHTML = `
 
-            <h3>🎙 ${ep.title}</h3>
+            <h3>🎙 ${titolo}</h3>
 
             <iframe
             src="https://widget.spreaker.com/player?episode_id=${id}&theme=light"
