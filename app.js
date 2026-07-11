@@ -1,6 +1,6 @@
 const feed = "https://billowing-silence-9fc4.teisasa3.workers.dev/";
 
-fetch(feed)
+fetch(feed + "?nocache=" + new Date().getTime())
 .then(response => response.text())
 .then(str => {
 
