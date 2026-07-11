@@ -1,85 +1,104 @@
-const feed = "https://billowing-silence-9fc4.teisasa3.workers.dev/";
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+}
 
-fetch(feed + "?nocache=" + new Date().getTime())
-.then(response => response.text())
-.then(str => {
 
-    const parser = new DOMParser();
-    const xml = parser.parseFromString(str, "text/xml");
+/* TESTATA RADIO */
 
-    const items = [...xml.querySelectorAll("item")];
-    items.sort((a, b) => {
-    const dataA = new Date(a.querySelector("pubDate").textContent);
-    const dataB = new Date(b.querySelector("pubDate").textContent);
-    return dataB - dataA;
-});
+.testata {
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
 
-    // ===== ULTIMA PUNTATA =====
-    const ultima = items[0];
 
-    const titoloUltima = ultima.querySelector("title").textContent;
-    const linkUltima = ultima.querySelector("link").textContent;
-    const match = linkUltima.match(/--(\d+)$/);
-    if (!match) return;
+.logo {
+    width: 150px;
+    border-radius: 50%;
+}
 
-    const idUltima = match[1];
 
-    const evidenza = document.getElementById("ultima-puntata");
+h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
 
-evidenza.innerHTML = `
-    <h2>🎙 Ultima puntata</h2>
-    <h3>${titoloUltima}</h3>
 
-    <iframe
-    src="https://widget.spreaker.com/player?episode_id=${idUltima}&theme=light"
-    width="100%"
-    height="200"
-    frameborder="0"
-    allow="autoplay">
-    </iframe>
+h2 {
+    color: #555;
+}
 
-    <hr>
-`;
 
-    // ===== ULTIME PUNTATE =====
+.testata p {
+    font-size: 18px;
+}
 
-    const lista = document.getElementById("episodi");
 
-    items.slice(1,11).forEach(ep => {
+/* ULTIMA PUNTATA */
 
-        const titolo = ep.querySelector("title").textContent;
-        const link = ep.querySelector("link").textContent;
-        const match = link.match(/--(\d+)$/);
-        if (!match) return;
+.ultima {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
 
-        const id = match[1];
 
-        const elemento = document.createElement("div");
+/* PUNTATE AUTOMATICHE */
 
-        elemento.innerHTML = `
+#episodi div {
+    background: white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 20px;
+}
 
-            <h3>🎙 ${titolo}</h3>
 
-            <iframe
-            src="https://widget.spreaker.com/player?episode_id=${id}&theme=light"
-            width="100%"
-            height="200"
-            frameborder="0"
-            allow="autoplay">
-            </iframe>
+/* LINK / PULSANTI */
 
-            <hr>
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
 
-        `;
 
-        lista.appendChild(elemento);
+/* PIEDE */
 
-    });
+footer {
+    margin-top: 30px;
+    color: #777;
+}
+.bottone {
+    display: inline-block;
+    padding: 12px 18px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
 
-})
-.catch(error => {
+.bottone:hover {
+    background: #0056b3;
+}
 
-    document.getElementById("episodi").innerHTML =
-    "Errore caricamento puntate";
+@media (max-width: 600px) {
 
-});
+    .logo {
+        width: 70px;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
