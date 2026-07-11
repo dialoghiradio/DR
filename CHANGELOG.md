@@ -1,7 +1,7 @@
 # Cronologia aggiornamenti - Dialoghi Radio
 
 ## Beta 1.0.0
-Data: luglio 2026
+Data: 11 luglio 2026
 
 ### Funzioni principali
 - Prima versione Beta dell'app Dialoghi Radio
