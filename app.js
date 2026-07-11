@@ -15,13 +15,16 @@ fetch(feed + "?nocache=" + new Date().getTime())
 });
 
     // ===== ULTIMA PUNTATA =====
-const ultima = items[0];
+    const ultima = items[0];
 
-const titoloUltima = ultima.querySelector("title").textContent;
-const linkUltima = ultima.querySelector("link").textContent;
-const idUltima = linkUltima.match(/--(\d+)$/)[1];
+    const titoloUltima = ultima.querySelector("title").textContent;
+    const linkUltima = ultima.querySelector("link").textContent;
+    const match = linkUltima.match(/--(\d+)$/);
+    if (!match) return;
 
-const evidenza = document.getElementById("ultima-puntata");
+    const idUltima = match[1];
+
+    const evidenza = document.getElementById("ultima-puntata");
 
 evidenza.innerHTML = `
     <h2>🎙 Ultima puntata</h2>
@@ -46,8 +49,10 @@ evidenza.innerHTML = `
 
         const titolo = ep.querySelector("title").textContent;
         const link = ep.querySelector("link").textContent;
+        const match = link.match(/--(\d+)$/);
+        if (!match) return;
 
-        const id = link.match(/--(\d+)$/)[1];
+        const id = match[1];
 
         const elemento = document.createElement("div");
 
