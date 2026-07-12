@@ -70,8 +70,14 @@
 </div>
 
 <script>
+
 function mostraInfo() {
-  document.getElementById("infoBox").style.display = "block";
+  const info = document.getElementById("infoBox");
+  info.style.display = "block";
+
+  info.scrollIntoView({
+    behavior: "smooth"
+  });
 }
 
 function chiudiInfo() {
