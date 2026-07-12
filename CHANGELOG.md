@@ -13,6 +13,7 @@ Prima versione Beta dell'app Dialoghi Radio.
 - Navigazione tra Home e percorsi
 - Installazione come applicazione sul dispositivo
 - Gestione versione Beta
+- Aggiunta funzione puntate già ascoltate
 
 ### Organizzazione dei contenuti
 
