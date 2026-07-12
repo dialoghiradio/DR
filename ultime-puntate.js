@@ -24,9 +24,11 @@ fetch(feed + "?nocache=" + new Date().getTime())
 
         const id = match[1];
 
-
         const elemento = document.createElement("div");
 
+        const ascoltate = JSON.parse(localStorage.getItem("puntateAscoltate")) || [];
+
+        const giaAscoltata = ascoltate.includes(id);
 
         elemento.innerHTML = `
 
@@ -40,13 +42,41 @@ fetch(feed + "?nocache=" + new Date().getTime())
         allow="autoplay">
         </iframe>
 
+        <button class="bottone ascoltato" data-id="${id}">
+        ${giaAscoltata ? "✅ Già ascoltata" : "☐ Già ascoltata"}
+        </button>
+
         <hr>
 
-        `;
+       `;
 
 
         lista.appendChild(elemento);
 
+        const pulsante = elemento.querySelector(".ascoltato");
+
+        pulsante.addEventListener("click", () => {
+
+        let ascoltate = JSON.parse(localStorage.getItem("puntateAscoltate")) || [];
+
+    if (ascoltate.includes(id)) {
+
+        ascoltate = ascoltate.filter(x => x !== id);
+        pulsante.textContent = "☐ Già ascoltata";
+
+    } else {
+
+        ascoltate.push(id);
+        pulsante.textContent = "✅ Già ascoltata";
+
+    }
+
+    localStorage.setItem(
+        "puntateAscoltate",
+        JSON.stringify(ascoltate)
+    );
+
+    });
 
     });
 
