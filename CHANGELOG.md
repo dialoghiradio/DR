@@ -13,7 +13,6 @@ Prima versione Beta dell'app Dialoghi Radio.
 - Navigazione tra Home e percorsi
 - Installazione come applicazione sul dispositivo
 - Gestione versione Beta
-- Aggiunta funzione puntate già ascoltate
 
 ### Organizzazione dei contenuti
 
@@ -32,6 +31,14 @@ Prima versione Beta dell'app Dialoghi Radio.
 - Adattamento logo per dispositivi mobili
 - Inserita indicazione versione Beta 1.0.0
 - Migliorati pulsanti e spaziature
+
+### Funzioni aggiunte dopo la prima release
+
+- Aggiunta descrizione della sezione "Ultime Puntate"
+- Inserita indicazione delle ultime 10 puntate aggiornate automaticamente
+- Aggiunta funzione "✅ Già ascoltata"
+- Possibilità per l'utente di aggiungere o rimuovere la spunta delle puntate ascoltate
+- Memorizzazione dello stato sul dispositivo dell'utente senza raccolta di dati personali
 
 ---
 
