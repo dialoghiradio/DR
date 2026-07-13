@@ -13,6 +13,18 @@
 
 <body>
 
+<!-- MENU LATERALE -->
+<div id="menu" class="menu">
+    <a href="javascript:void(0)" class="chiudi" onclick="chiudiMenu()">×</a>
+    <a href="#">🏠 Home</a>
+    <a href="percorso-biblico.html">📖 Percorso Biblico</a>
+    <a href="ultime-puntate.html">🎧 Ultime Puntate</a>
+    <a href="#info">ℹ️ Info</a>
+</div>
+
+<!-- BOTTONE MENU -->
+<span class="menu-btn" onclick="apriMenu()">☰</span>
+
 <header class="testata">
 
     <img src="icona.png" class="logo" alt="Dialoghi Radio">
@@ -20,74 +32,90 @@
     <h1>Dialoghi Radio</h1>
     <p>La Siesta del Pane Quotidiano</p>
     <p>Parole, musica e riflessioni per accompagnare la tua giornata</p>
-    <small class="versione">Beta 1.0.0</small>
+    <small class="versione">Beta 1.1.0</small>
+
 </header>
 
 <main>
 
     <!-- 🎙 ULTIMA PUNTATA -->
-    <div id="ultima-puntata">
-        Caricamento ultima puntata...
-    </div>
+    <section id="ultima-puntata" class="ultima">
+        <h2>🎙 Ultima Puntata</h2>
+        <div id="player-ultima">Caricamento...</div>
+    </section>
 
     <!-- 📚 PERCORSI -->
-    <h2>📚 Percorsi</h2>
+    <section>
+        <h2>📚 Percorsi</h2>
 
-    <a href="percorso-biblico.html" class="bottone">
-        📖 Apri Percorso Biblico
-    </a>
+        <a href="percorso-biblico.html" class="bottone">
+            📖 Percorso Biblico
+        </a>
 
-    <!-- 🎧 ULTIME PUNTATE -->
-      <a href="ultime-puntate.html" class="bottone">
-     📻 Apri Ultime Puntate
-     </a>
-	 
-     <!-- ℹ️ INFO -->
-     <button onclick="mostraInfo()" class="bottone">
-         ℹ️ Info
-     </button>
+        <a href="ultime-puntate.html" class="bottone">
+            🎧 Ultime Puntate
+        </a>
+    </section>
 
-	 <a href="contatti.html" class="bottone">
-💬 Contatti e suggerimenti
-    </a>
+    <!-- ℹ️ INFO -->
+    <section id="info">
+        <h2>ℹ️ Info</h2>
+
+        <p>
+            Dialoghi Radio nasce per accompagnarti ogni giorno
+            con parole di fede, speranza e vita concreta.
+        </p>
+
+        <button onclick="mostraInfo()" class="bottone">
+            Apri dettagli
+        </button>
+    </section>
 
 </main>
 
 <footer>
-
-<p>
-❤️ Dialoghi Radio
-<br>
-
-</p>
-
+    <p>❤️ Dialoghi Radio</p>
 </footer>
 
+<!-- BOX INFO -->
+<div id="infoBox" class="ultima" style="display:none;">
+    <h2>Dialoghi Radio</h2>
+    <p>Versione Beta 1.1.0</p>
+    <p>© 2026 Salvatore Esposito</p>
+    <p>Un progetto di ascolto e accompagnamento</p>
+
+    <button onclick="chiudiInfo()" class="bottone">Chiudi</button>
+</div>
+
+<!-- SCRIPT -->
 <script async src="https://widget.spreaker.com/widgets.js"></script>
 <script src="app.js"></script>
 
-<div id="infoBox" style="display:none; padding:20px;">
-  <h2>Dialoghi Radio</h2>
-  <p>Versione Beta 1.0.0</p>
-  <p>© 2026 Salvatore Esposito</p>
-  <p>Un progetto di ascolto e accompagnamento</p>
-  <button onclick="chiudiInfo()">Chiudi</button>
-</div>
-
 <script>
 
-function mostraInfo() {
-  const info = document.getElementById("infoBox");
-  info.style.display = "block";
+/* MENU */
+function apriMenu() {
+    document.getElementById("menu").style.width = "250px";
+}
 
-  info.scrollIntoView({
-    behavior: "smooth"
-  });
+function chiudiMenu() {
+    document.getElementById("menu").style.width = "0";
+}
+
+/* INFO */
+function mostraInfo() {
+    const info = document.getElementById("infoBox");
+    info.style.display = "block";
+
+    info.scrollIntoView({
+        behavior: "smooth"
+    });
 }
 
 function chiudiInfo() {
-  document.getElementById("infoBox").style.display = "none";
+    document.getElementById("infoBox").style.display = "none";
 }
+
 </script>
 
 </body>
