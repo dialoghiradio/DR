@@ -118,6 +118,17 @@ footer {
 
 }
 
+button.bottone {
+    border: none;
+    cursor: pointer;
+    width: 220px;
+    font-family: Arial, sans-serif;
+}
+
+button.bottone {
+    display: inline-block;
+}
+
 main {
     padding: 10px;
 }
