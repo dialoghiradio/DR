@@ -61,7 +61,7 @@ h2 {
 }
 
 
-/* LINK / PULSANTI */
+/* LINK GENERALI */
 
 a {
     display: inline-block;
@@ -75,16 +75,12 @@ a {
 }
 
 
-/* PIEDE */
-
-footer {
-    margin-top: 30px;
-    color: #777;
-}
+/* PULSANTI APP */
 
 .bottone {
     display: inline-block;
     width: 220px;
+    box-sizing: border-box;
     text-align: center;
     padding: 14px 20px;
     background: #007bff;
@@ -96,9 +92,22 @@ footer {
     margin: 10px;
 }
 
+
 .bottone:hover {
     background: #0056b3;
 }
+
+
+/* Uniforma il bottone Info agli altri */
+
+button.bottone {
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+
+/* VERSIONE MOBILE */
 
 @media (max-width: 600px) {
 
@@ -108,6 +117,7 @@ footer {
         margin: 0 auto;
     }
 
+
     .bottone {
         display: block;
         width: 80%;
@@ -116,31 +126,39 @@ footer {
 
 }
 
-button.bottone {
-    border: none;
-    cursor: pointer;
-    width: 220px;
-    font-family: Arial, sans-serif;
-	display: inline-block;
-	box-sizing: border-box;
-}
+
+/* MAIN */
 
 main {
     padding: 10px;
 }
 
 
+/* SPAZI */
+
 #ultima-puntata {
     margin-top: 25px;
 }
+
 
 #episodi div {
     margin-bottom: 25px;
 }
 
+
+/* VERSIONE APP */
+
 .versione {
     display: block;
     margin-top: 10px;
     font-size: 14px;
+    color: #777;
+}
+
+
+/* PIEDE */
+
+footer {
+    margin-top: 30px;
     color: #777;
 }
