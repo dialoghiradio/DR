@@ -39,7 +39,8 @@ Prima versione Beta dell'app Dialoghi Radio.
 - Aggiunta funzione "✅ Già ascoltata"
 - Possibilità per l'utente di aggiungere o rimuovere la spunta delle puntate ascoltate
 - Memorizzazione dello stato sul dispositivo dell'utente senza raccolta di dati personali
-
+- Aggiunta pagina Contatti e suggerimenti
+- Collegamento email per gli ascoltatori
 ---
 
 ## Sviluppi futuri
