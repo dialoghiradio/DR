@@ -6,6 +6,7 @@ body {
     background: #f5f5f5;
 }
 
+
 /* TESTATA RADIO */
 
 .testata {
@@ -15,67 +16,28 @@ body {
     margin-bottom: 25px;
 }
 
+
 .logo {
     width: 150px;
     border-radius: 50%;
 }
+
 
 h1 {
     font-size: 36px;
     margin-bottom: 5px;
 }
 
+
 h2 {
     color: #555;
-    margin-top: 30px;
-    margin-bottom: 15px;
 }
+
 
 .testata p {
     font-size: 18px;
 }
 
-/* MENU */
-
-.menu-btn {
-    font-size: 26px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-/* Menu laterale */
-.menu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 60px;
-}
-
-/* Link menu */
-.menu a {
-    padding: 12px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-}
-
-.menu a:hover {
-    background-color: #575757;
-}
-
-/* Pulsante chiusura */
-.menu .chiudi {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-}
 
 /* ULTIMA PUNTATA */
 
@@ -84,8 +46,8 @@ h2 {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    margin-top: 25px;
 }
+
 
 /* PUNTATE AUTOMATICHE */
 
@@ -95,6 +57,7 @@ h2 {
     margin: 20px 0;
     border-radius: 20px;
 }
+
 
 /* LINK / PULSANTI */
 
@@ -109,7 +72,13 @@ a {
     font-size: 18px;
 }
 
-/* BOTTONI PRINCIPALI */
+
+/* PIEDE */
+
+footer {
+    margin-top: 30px;
+    color: #777;
+}
 
 .bottone {
     display: inline-block;
@@ -129,10 +98,37 @@ a {
     background: #0056b3;
 }
 
-/* CONTENUTO */
+@media (max-width: 600px) {
+
+    .logo {
+        width: 70px;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .bottone {
+        display: block;
+        width: 80%;
+        margin: 15px auto;
+    }
+
+}
 
 main {
     padding: 10px;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 #ultima-puntata {
@@ -143,34 +139,9 @@ main {
     margin-bottom: 25px;
 }
 
-/* FOOTER */
-
-footer {
-    margin-top: 30px;
-    color: #777;
-}
-
 .versione {
     display: block;
     margin-top: 10px;
     font-size: 14px;
     color: #777;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 600px) {
-
-    .logo {
-        width: 70px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .bottone {
-        display: block;
-        width: 80%;
-        margin: 15px auto;
-    }
-
 }
