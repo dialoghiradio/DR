@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Guida utente</title>
+</head>
+<body>
+
+<h1>📘 Guida utente</h1>
+
+<div id="contenuto">Caricamento...</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script>
+fetch('documentazione/guida_utente.md')
+  .then(response => response.text())
+  .then(text => {
+    document.getElementById('contenuto').innerHTML = marked.parse(text);
+  })
+  .catch(() => {
+    document.getElementById('contenuto').innerText = "Errore nel caricamento guida";
+  });
+</script>
+
+</body>
+</html>
