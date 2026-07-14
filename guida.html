@@ -1,27 +1,139 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8">
-  <title>Guida utente</title>
+
+  <!-- Fondamentale per smartphone -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Guida utente - Dialoghi Radio</title>
+
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .contenitore {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      text-align: center;
+      color: #007bff;
+      font-size: 28px;
+    }
+
+    h2 {
+      color: #007bff;
+      margin-top: 30px;
+    }
+
+    h3 {
+      color: #555;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .indietro {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 20px auto;
+      padding: 12px 25px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+
+    /* Ottimizzazione smartphone */
+
+    @media (max-width: 600px) {
+
+      body {
+        padding: 10px;
+      }
+
+      .contenitore {
+        padding: 18px;
+        border-radius: 15px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p, li {
+        font-size: 18px;
+      }
+
+    }
+
+  </style>
+
 </head>
+
+
 <body>
 
-<h1>📘 Guida utente</h1>
+<div class="contenitore">
 
-<div id="contenuto">Caricamento...</div>
+<a href="index.html" class="indietro">
+⬅ Torna a Dialoghi Radio
+</a>
+
+
+<div id="contenuto">
+Caricamento guida...
+</div>
+
+
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
+
 <script>
+
 fetch('documentazione/guida_utente.md')
-  .then(response => response.text())
-  .then(text => {
-    document.getElementById('contenuto').innerHTML = marked.parse(text);
-  })
-  .catch(() => {
-    document.getElementById('contenuto').innerText = "Errore nel caricamento guida";
-  });
+
+.then(response => response.text())
+
+.then(text => {
+
+document.getElementById('contenuto').innerHTML = marked.parse(text);
+
+})
+
+.catch(() => {
+
+document.getElementById('contenuto').innerText =
+"Errore nel caricamento guida";
+
+});
+
 </script>
+
 
 </body>
 </html>
