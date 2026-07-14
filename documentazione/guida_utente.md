@@ -61,6 +61,60 @@ continuamente il progetto.
 
 ---
 
+## 🔄 Aggiornamenti e problemi di visualizzazione
+
+Dialoghi Radio è una Web App. In alcuni casi, il dispositivo può
+mostrare una versione non aggiornata.
+
+Se non vedi le ultime modifiche, segui queste indicazioni.
+
+### 💻 PC
+
+- Premi **CTRL + F5** per aggiornare completamente la pagina
+
+---
+
+### 📱 Android
+
+Se hai installato l'app tramite Chrome:
+
+**Svuotare la cache**
+
+1. Apri Chrome
+2. Tocca i tre puntini in alto a destra
+3. Vai su Impostazioni
+4. Tocca Privacy e sicurezza
+5. Seleziona Cancella dati di navigazione
+6. Spunta "Immagini e file memorizzati nella cache"
+7. Conferma
+
+**Riavviare l'app**
+
+- Chiudi l'app dalle app recenti
+- Riaprila dalla schermata Home
+
+---
+
+### 🍎 iPhone / iPad
+
+Le Web App utilizzano Safari.
+
+**Forzare il ricaricamento**
+
+- Apri l'app
+- Tocca il pulsante Aggiorna (freccia circolare)
+
+**Se non si aggiorna**
+
+1. Tieni premuto sull’icona dell’app
+2. Tocca Elimina app
+3. Apri Safari
+4. Vai sul sito di Dialoghi Radio
+5. Tocca Condividi
+6. Seleziona "Aggiungi a schermata Home"
+
+---
+
 ## Aggiornamenti futuri
 
 L'app è in continua evoluzione.
