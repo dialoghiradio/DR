@@ -65,6 +65,14 @@ Prima versione Beta dell'app Dialoghi Radio.
 - Backup del progetto salvato su PC e supporto USB
 - Creata una gestione ordinata delle versioni tramite release e commit GitHub
 
+### Guida utente integrata
+
+- Creata pagina interna "📘 Guida utente" accessibile direttamente dall'app
+- Collegata la guida al documento `documentazione/guida_utente.md`
+- Mantenuta una singola fonte per la documentazione utente
+- Migliorata la visualizzazione della guida su PC e smartphone
+- Ottimizzato il layout per una lettura più semplice senza necessità di zoom
+- Aggiunto pulsante per tornare alla Home di Dialoghi Radio
 
 ---
 
