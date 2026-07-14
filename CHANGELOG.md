@@ -47,6 +47,27 @@ Prima versione Beta dell'app Dialoghi Radio.
 - Aggiunto messaggio di ringraziamento per chi contribuisce al miglioramento dell'app
 
 
+---
+
+## Sviluppo post Beta 1.0.0 - Luglio 2026
+
+### Documentazione
+
+- Aggiunta guida per installare Dialoghi Radio sullo smartphone
+- Spiegate le procedure per Android e iPhone
+- Inserite indicazioni per condividere il collegamento della web app
+- Preparata documentazione per futuri utenti
+
+### Gestione progetto
+
+- Creata una fase di sviluppo successiva alla release Beta 1.0.0
+- Mantenuta la versione Beta 1.0.0 come riferimento stabile
+- Backup del progetto salvato su PC e supporto USB
+- Creata una gestione ordinata delle versioni tramite release e commit GitHub
+
+
+---
+
 ## Sviluppi futuri
 
 - Sviluppo del progetto "Accanto a Te"
@@ -56,3 +77,7 @@ Prima versione Beta dell'app Dialoghi Radio.
 - Nuove funzioni di interazione
 - Nuove categorie di contenuti
 - Eventuale sistema di notifiche aggiornamenti
+- Menu laterale di navigazione
+- Ascolto Live H24
+- Palinsesto programmato
+- Funzione di condivisione dell'applicazione
