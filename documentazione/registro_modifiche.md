@@ -2,11 +2,10 @@
 
 ## Beta 1.0.0
 
-### Migliorata sezione ascolto podcast
+### Migliorie
 
 Data: luglio 2026
 
-Modifiche effettuate:
 - Aggiornato il collegamento dalla Home.
 - Rinominato il pulsante in "🎧 Ascolta Dialoghi Radio".
 - Aggiunto accesso all'archivio completo delle puntate tramite Castbox.
@@ -14,5 +13,19 @@ Modifiche effettuate:
   - 📚 Tutte le puntate
   - 🎧 Ultime puntate (ultimi 10 episodi automatici)
 
-Motivazione:
-Rendere più semplice per gli utenti scegliere tra archivio completo e contenuti recenti.
+### Migliorie di usabilità
+
+Problema:
+L’utente non sapeva come usare Castbox dopo il click su “Tutte le puntate”.
+
+Soluzione:
+Aggiunta una breve spiegazione sotto il pulsante con istruzioni semplici.
+
+Risultato:
+L’utente riesce a proseguire e avviare l’ascolto senza difficoltà.
+
+### Motivazione
+
+Rendere più semplice per gli utenti:
+- scegliere tra archivio completo e contenuti recenti;
+- comprendere cosa fare dopo l’apertura di Castbox.
