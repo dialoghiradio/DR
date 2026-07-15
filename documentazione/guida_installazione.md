@@ -70,22 +70,21 @@ In questo caso:
 4. Ripeti la procedura
 
 ---
+## Installazione su iPhone
 
-# Installazione su iPhone
+1. Apri il link di Dialoghi Radio con Safari.
 
-1. Apri il link con **Safari**
+2. Premi il pulsante Condividi.
 
-2. Premi il pulsante:
+3. Seleziona:
+"Aggiungi alla schermata Home"
+"Esempio schermata iPhone: scelta Aggiungi alla schermata Home"
+<p align="center">
+ <img src="immagini_guida/06_iphone_aggiungi_home.png" width="350">
+</p>
+4. Conferma.
 
-**Condividi ⬆️**
-
-3. Scorri e seleziona:
-
-**Aggiungi alla schermata Home**
-
-4. Conferma
-
-L'icona sarà disponibile nella schermata principale.
+L'icona Dialoghi Radio apparirà nella schermata principale.
 
 ---
 📌 Nota
