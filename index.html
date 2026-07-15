@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialoghi Radio</title>
 
-<title>Ascolta Dialoghi Radio</title>
-
-<link rel="stylesheet" href="stile.css">
-
+    <link rel="stylesheet" href="stile.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icona.png">
 </head>
 
 <body>
 
 <header class="testata">
 
-<img src="icona.png" class="logo" alt="Dialoghi Radio">
+    <img src="icona.png" class="logo" alt="Dialoghi Radio">
 
-<h1>🎧 Ascolta Dialoghi Radio</h1>
-
-<p>Ultime puntate e archivio completo</p>
-
-<a href="index.html" class="bottone">
-⬅ Torna alla Home
-</a>
-
+    <h1>Dialoghi Radio</h1>
+    <p>La Siesta del Pane Quotidiano</p>
+    <p>Parole, musica e riflessioni per accompagnare la tua giornata</p>
+    <small class="versione">Beta 1.0.0</small>
 </header>
 
 <main>
-<p>
-Scegli se ascoltare tutte le puntate oppure le ultime pubblicate di Dialoghi Radio.
-</p>
 
-<a href="https://castbox.fm/channel/id6422987" class="bottone" target="_blank">
-📚 Tutte le puntate
-</a>
+    <!-- 🎙 ULTIMA PUNTATA -->
+    <div id="ultima-puntata">
+        Caricamento ultima puntata...
+    </div>
 
-<hr>
+    <!-- 📚 PERCORSI -->
+    <h2>📚 Percorsi</h2>
 
-<h2>🎧 Ultime puntate</h2>
+    <a href="percorso-biblico.html" class="bottone">
+        📖 Apri Percorso Biblico
+    </a>
 
-<p>
-Ascolta le ultime 10 puntate di Dialoghi Radio.
-La raccolta si aggiorna automaticamente con le nuove puntate.
-</p>
+    <!-- 🎧 ULTIME PUNTATE -->
+      <a href="ultime-puntate.html" class="bottone">
+     📻 Apri Ultime Puntate
+     </a>
+	<!-- ℹ️ INFO -->
+	 <hr>
 
-<div id="episodi">
-    Caricamento puntate...
-</div>
+     <button onclick="mostraInfo()" class="bottone">
+         ℹ️ Info
+     </button>
+	 
+	<!-- 💬 Contatti e suggerimenti -->
+    <hr>
+
+	 <a href="contatti.html" class="bottone">
+💬 Contatti e suggerimenti
+    </a>
+
+    <!-- 📘 GUIDA UTENTE -->
+   <a href="guida.html" class="bottone">
+📘 Guida utente
+   </a>
 
 </main>
 
@@ -56,12 +66,38 @@ La raccolta si aggiorna automaticamente con le nuove puntate.
 
 <p>
 ❤️ Dialoghi Radio
+<br>
+
 </p>
 
 </footer>
 
-<script src="ultime-puntate.js"></script>
+<script async src="https://widget.spreaker.com/widgets.js"></script>
+<script src="app.js"></script>
+
+<div id="infoBox" style="display:none; padding:20px;">
+  <h2>Dialoghi Radio</h2>
+  <p>Versione Beta 1.0.0</p>
+  <p>© 2026 Salvatore Esposito</p>
+  <p>Un progetto di ascolto e accompagnamento</p>
+  <button onclick="chiudiInfo()">Chiudi</button>
+</div>
+
+<script>
+
+function mostraInfo() {
+  const info = document.getElementById("infoBox");
+  info.style.display = "block";
+
+  info.scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+function chiudiInfo() {
+  document.getElementById("infoBox").style.display = "none";
+}
+</script>
 
 </body>
-
 </html>
