@@ -38,3 +38,16 @@ Raccogliere impressioni, problemi e suggerimenti sulla versione Beta.
 ## Feedback generale
 
 Gli utenti hanno trovato l'app semplice e intuitiva.
+
+## Segnalazioni ricevute
+
+| Data | Tester | Problema | Soluzione adottata |
+|---|---|---|---|
+| Luglio 2026 | Tester Android | Difficoltà iniziale nell'installazione dell'app | Fornite indicazioni per apertura tramite Chrome e procedura Installa/Crea scorciatoia |
+
+## Feedback positivi ricevuti
+
+- Applicazione giudicata semplice e intuitiva.
+- Navigazione chiara.
+- Installazione riuscita dopo le indicazioni.
+- Feedback positivo sui contenuti e sulla facilità d'uso.
