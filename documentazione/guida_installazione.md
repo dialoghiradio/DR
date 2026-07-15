@@ -24,7 +24,7 @@ https://dialoghiradio.github.io/DR/
 ## 2. Apri il menu Chrome (i tre puntini ⋮ in alto a destra)
 
 <p align="center">
-  <img src="immagini_guida/02_chrome_tre_puntini.png" width="350">
+  <img src="immagini_guida/02_menu_tre_puntini.png" width="350">
 </p>
 
 ---
