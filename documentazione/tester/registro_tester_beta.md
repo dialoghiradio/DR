@@ -2,18 +2,22 @@
 
 ## Primo gruppo di prova
 
-Obiettivo:
-Raccogliere impressioni, problemi e suggerimenti sulla versione Beta.
+**Obiettivo:**
+Raccogliere impressioni, problemi e suggerimenti sulla versione Beta di Dialoghi Radio.
+
+---
 
 ## Tester coinvolti
 
-| ID | Dispositivo | Installazione | Feedback |
-|---|---|---|---|
-| Tester 1 | iPhone | ✅ | Ricevuto |
-| Tester 2 | Android | ✅ | Ricevuto |
-| Tester 3 | Android | ✅ | Ricevuto |
-| Tester 4 | Android| ✅ | Ricevuto |
-| Tester 5 | Android| ✅ | Ricevuto |
+| ID       | Dispositivo | Installazione | Feedback |
+| -------- | ----------- | ------------- | -------- |
+| Tester 1 | iPhone      | ✅             | Ricevuto |
+| Tester 2 | Android     | ✅             | Ricevuto |
+| Tester 3 | Android     | ✅             | Ricevuto |
+| Tester 4 | Android     | ✅             | Ricevuto |
+| Tester 5 | Android     | ✅             | Ricevuto |
+
+---
 
 ## Domande per i tester
 
@@ -23,31 +27,41 @@ Raccogliere impressioni, problemi e suggerimenti sulla versione Beta.
 4. Hai trovato difficoltà?
 5. Quale funzione vorresti aggiungere?
 
+---
+
 ## Problemi emersi
 
-- Alcuni utenti Android non trovano subito "Aggiungi alla schermata Home".
-- Alcuni dispositivi mostrano "Installa" o "Crea scorciatoia".
-- Su iPhone è necessario aprire il link con Safari.
+* Alcuni utenti Android non trovano subito "Aggiungi alla schermata Home".
+* Alcuni dispositivi mostrano "Installa" o "Crea scorciatoia".
+* Su iPhone è necessario aprire il link con Safari.
+
+---
 
 ## Soluzioni adottate
 
-- Aggiornata la guida installazione.
-- Inserite spiegazioni per Android e WhatsApp.
-- Prevista integrazione screenshot iPhone.
+* Aggiornata la guida installazione.
+* Inserite spiegazioni per Android e apertura tramite WhatsApp.
+* In attesa di aggiungere gli screenshot per iPhone.
 
-## Feedback generale
-
-Gli utenti hanno trovato l'app semplice e intuitiva.
+---
 
 ## Segnalazioni ricevute
 
-| Data | Tester | Problema | Soluzione adottata |
-|---|---|---|---|
+| Data        | Tester         | Problema                                        | Soluzione adottata                                                                    |
+| ----------- | -------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------- |
 | Luglio 2026 | Tester Android | Difficoltà iniziale nell'installazione dell'app | Fornite indicazioni per apertura tramite Chrome e procedura Installa/Crea scorciatoia |
+
+---
 
 ## Feedback positivi ricevuti
 
-- Applicazione giudicata semplice e intuitiva.
-- Navigazione chiara.
-- Installazione riuscita dopo le indicazioni.
-- Feedback positivo sui contenuti e sulla facilità d'uso.
+* Applicazione giudicata semplice e intuitiva.
+* Navigazione chiara.
+* Installazione riuscita dopo le indicazioni.
+* Feedback positivo sui contenuti e sulla facilità d'uso.
+
+---
+
+## Feedback generale
+
+Gli utenti hanno trovato Dialoghi Radio semplice e intuitiva.
