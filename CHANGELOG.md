@@ -74,6 +74,16 @@ Prima versione Beta dell'app Dialoghi Radio.
 - Ottimizzato il layout per una lettura più semplice senza necessità di zoom
 - Aggiunto pulsante per tornare alla Home di Dialoghi Radio
 
+### Aggiornamenti
+
+- Migliorata la sezione ascolto podcast.
+- Aggiunto collegamento all'archivio completo delle puntate tramite Castbox.
+- Riorganizzata la pagina "Ascolta Dialoghi Radio":
+  - 📚 Tutte le puntate
+  - 🎧 Ultime puntate (ultimi 10 episodi aggiornati automaticamente).
+- Aggiornato il pulsante nella Home da "Apri ultime puntate" a "🎧 Ascolta Dialoghi Radio".
+- Aggiornata la guida installazione con screenshot iPhone.
+- Migliorata la documentazione per i tester Beta.
 ---
 
 ## Sviluppi futuri
