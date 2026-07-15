@@ -88,6 +88,11 @@ In questo caso:
 L'icona sarà disponibile nella schermata principale.
 
 ---
+📌 Nota
+
+Le schermate possono variare leggermente a seconda della versione di iOS.
+
+Gli screenshot per iPhone verranno aggiunti nelle prossime versioni della guida.
 
 # Come condividere Dialoghi Radio
 
