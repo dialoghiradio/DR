@@ -12,21 +12,25 @@ Non è necessario scaricare un'app dal Play Store o App Store: puoi aprirla dal 
 
 ## Metodo consigliato (Google Chrome)
 
-1. Apri il link di Dialoghi Radio con **Google Chrome**:
-
+## 1. Apri il collegamento di Dialoghi Radio con **Google Chrome**:
 https://dialoghiradio.github.io/DR/
 
-![Apertura link](immagini_guida/01_apertura_link.png)
+<p align="center">
+  <img src="immagini_guida/01_apertura_link.png" width="350">
+</p>
 
 ---
 
-2. Tocca il menu del browser (i tre puntini ⋮ in alto a destra)
+## 2. Apri il menu Chrome (i tre puntini ⋮ in alto a destra)
 
-![Menu Chrome](immagini_guida/02_chrome_tre_puntini.png)
+<p align="center">
+  <img src="immagini_guida/02_chrome_tre_puntini.png" width="350">
+</p>
 
 ---
 
-3. Cerca una delle seguenti opzioni:
+## 3. Installa l'app
+Cerca una delle seguenti opzioni:
 
 * **Installa**
 * **Crea scorciatoia**
@@ -34,20 +38,24 @@ https://dialoghiradio.github.io/DR/
 
 *(la voce può cambiare in base al telefono)*
 
-![Menu installazione](immagini_guida/03_menu_installazione.png)
-
+<p align="center">
+   <img src="immagini_guida/03_menu_installazione.png" width="350">
+</p>
 ---
 
-4. Conferma l’installazione
+## 4. Icona nella Home che conferma l'installazione
 
-![Icona nella Home](immagini_guida/04_icona_dialoghi_radio_home.png)
 
+<p align="center">
+  <img src="immagini_guida/04_icona_dialoghi_radio_home.png" width="350">
+</p>
 ---
 
-5. Apri l'app dalla schermata Home
+## 5. App aperta dalla schermata Home
 
-![App aperta](immagini_guida/05_app_dialoghi_radio_aperta.png)
-
+<p align="center">
+ <img src="immagini_guida/05_app_dialoghi_radio_aperta.png" width="350">
+</p>
 ---
 
 ### ⚠️ Se apri il link da WhatsApp
