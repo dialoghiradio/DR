@@ -1,90 +1,212 @@
+// ============================================
+// DIALOGHI RADIO
+// Caricamento ultime puntate da feed RSS
+//
+// Il file:
+// - recupera le puntate dal Cloudflare Worker
+// - legge il feed RSS di Spreaker
+// - mostra l'ultima puntata in evidenza
+// - mostra le 10 puntate precedenti
+// ============================================
+
+
+// Indirizzo del feed RSS filtrato tramite Cloudflare Worker
 const feed = "https://billowing-silence-9fc4.teisasa3.workers.dev/";
 
+
+// Recupera il feed aggiungendo un parametro temporale
+// per evitare problemi di cache del browser
 fetch(feed + "?nocache=" + new Date().getTime())
+
+
+// Trasforma la risposta ricevuta in testo XML
 .then(response => response.text())
+
+
+// Elaborazione del contenuto XML
 .then(str => {
 
-    const parser = new DOMParser();
-    const xml = parser.parseFromString(str, "text/xml");
 
-    const items = [...xml.querySelectorAll("item")];
+    // Crea un parser per leggere il formato XML del feed RSS
+const parser = new DOMParser();
 
+    // Converte il testo ricevuto in un documento XML leggibile
+const xml = parser.parseFromString(str, "text/xml");
+
+
+    // Recupera tutti gli elementi <item>
+    // Ogni item rappresenta una puntata del podcast
+const items = [...xml.querySelectorAll("item")];
+
+
+    // Ordina le puntate dalla più recente alla più vecchia
+    // usando la data di pubblicazione presente nel feed RSS
+items.sort((a, b) => {
+    const dataA = new Date(a.querySelector("pubDate").textContent);
+    const dataB = new Date(b.querySelector("pubDate").textContent);
+    return dataB - dataA;
+});
+
+    // ===== ULTIMA PUNTATA =====
+        const dataA = new Date(
+            a.querySelector("pubDate").textContent
+        );
+
+        const dataB = new Date(
+            b.querySelector("pubDate").textContent
+        );
+
+        return dataB - dataA;
+
+    });
+
+
+
+    // ============================================
+    // ULTIMA PUNTATA IN EVIDENZA
+    // ============================================
+
+
+    // La prima puntata dopo l'ordinamento è la più recente
+const ultima = items[0];
+
+    const titoloUltima = ultima.querySelector("title").textContent;
+    const linkUltima = ultima.querySelector("link").textContent;
+
+    // Recupera titolo e link della puntata
+    const titoloUltima =
+        ultima.querySelector("title").textContent;
+
+    const linkUltima =
+        ultima.querySelector("link").textContent;
+
+
+    // Estrae l'ID della puntata necessario per il player Spreaker
+const match = linkUltima.match(/--(\d+)$/);
+
+
+    // Se non trova l'ID interrompe il caricamento
+if (!match) return;
+
+
+const idUltima = match[1];
+
+    const evidenza = document.getElementById("ultima-puntata");
+
+evidenza.innerHTML = `
+    <h2>🎙 Ultima puntata</h2>
+    <h3>${titoloUltima}</h3>
+    // Elemento HTML dove inserire la puntata principale
+    const evidenza =
+        document.getElementById("ultima-puntata");
+
+
+    <iframe
+    src="https://widget.spreaker.com/player?episode_id=${idUltima}&theme=light"
+    width="100%"
+    height="200"
+    frameborder="0"
+    allow="autoplay">
+    </iframe>
+
+    <hr>
+`;
+    // Crea il player Spreaker della puntata più recente
+    evidenza.innerHTML = `
+
+    // ===== ULTIME PUNTATE =====
+        <h2>🎙 Ultima puntata</h2>
 
     const lista = document.getElementById("episodi");
+        <h3>${titoloUltima}</h3>
 
-
-    items.slice(0,10).forEach(ep => {
-
-        const titolo = ep.querySelector("title").textContent;
-        const link = ep.querySelector("link").textContent;
-
-        const match = link.match(/--(\d+)$/);
-
-        if (!match) return;
-
-        const id = match[1];
-
-        const elemento = document.createElement("div");
-
-        const ascoltate = JSON.parse(localStorage.getItem("puntateAscoltate")) || [];
-
-        const giaAscoltata = ascoltate.includes(id);
-
-        elemento.innerHTML = `
-
-        <h3>🎙 ${titolo}</h3>
-
+    items.slice(1,11).forEach(ep => {
         <iframe
-        src="https://widget.spreaker.com/player?episode_id=${id}&theme=light"
+        src="https://widget.spreaker.com/player?episode_id=${idUltima}&theme=light"
         width="100%"
         height="200"
         frameborder="0"
         allow="autoplay">
         </iframe>
 
-        <button class="bottone ascoltato" data-id="${id}">
-        ${giaAscoltata ? "✅ Già ascoltata" : "☐ Già ascoltata"}
-        </button>
-
+        const titolo = ep.querySelector("title").textContent;
+        const link = ep.querySelector("link").textContent;
+        const match = link.match(/--(\d+)$/);
         <hr>
+
+    `;
+
+
+
+    // ============================================
+    // ULTIME 10 PUNTATE
+    // ============================================
+
+
+    // Elemento HTML dove inserire la lista episodi
+    const lista =
+        document.getElementById("episodi");
+
+
+
+    // Prende le puntate dalla seconda alla undicesima
+    // perché la prima è già stata mostrata sopra
+    items.slice(1, 11).forEach(ep => {
+
+
+        // Recupera titolo e link della puntata
+        const titolo =
+            ep.querySelector("title").textContent;
+
+        const link =
+            ep.querySelector("link").textContent;
+
+
+
+        // Estrae l'ID Spreaker dal link
+        const match =
+            link.match(/--(\d+)$/);
+
+
+        // Se manca l'ID salta questa puntata
+if (!match) return;
+
+
+const id = match[1];
+
+        const elemento = document.createElement("div");
+
+        // Crea un contenitore HTML per ogni episodio
+        const elemento =
+            document.createElement("div");
+
+
+
+        // Inserisce titolo e player Spreaker
+elemento.innerHTML = `
+
+           <h3>🎙 ${titolo}</h3>
+@@ -72,14 +172,23 @@ evidenza.innerHTML = `
 
        `;
 
 
-        lista.appendChild(elemento);
+        // Aggiunge l'episodio alla pagina
+lista.appendChild(elemento);
 
-        const pulsante = elemento.querySelector(".ascoltato");
 
-        pulsante.addEventListener("click", () => {
-
-        let ascoltate = JSON.parse(localStorage.getItem("puntateAscoltate")) || [];
-
-    if (ascoltate.includes(id)) {
-
-        ascoltate = ascoltate.filter(x => x !== id);
-        pulsante.textContent = "☐ Già ascoltata";
-
-    } else {
-
-        ascoltate.push(id);
-        pulsante.textContent = "✅ Già ascoltata";
-
-    }
-
-    localStorage.setItem(
-        "puntateAscoltate",
-        JSON.stringify(ascoltate)
-    );
-
-    });
-
-    });
+});
 
 
 })
+
+
+// Gestione eventuali errori di caricamento
 .catch(error => {
+
 
 document.getElementById("episodi").innerHTML =
 "Errore caricamento puntate";
+
 
 });
