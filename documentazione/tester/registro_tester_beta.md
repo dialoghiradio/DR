@@ -1,67 +1,94 @@
-# Registro Tester Beta - Dialoghi Radio
+# Registro Tester Beta 1.0.0 - Dialoghi Radio
 
 ## Primo gruppo di prova
 
+**Periodo:** Luglio 2026
+
 **Obiettivo:**
-Raccogliere impressioni, problemi e suggerimenti sulla versione Beta di Dialoghi Radio.
+
+Raccogliere impressioni, problemi e suggerimenti
+durante la fase di test della versione Beta 1.0.0
+di Dialoghi Radio.
 
 ---
 
 ## Tester coinvolti
 
-| ID       | Dispositivo | Installazione | Feedback |
-| -------- | ----------- | ------------- | -------- |
-| Tester 1 | iPhone      | ✅             | Ricevuto |
-| Tester 2 | Android     | ✅             | Ricevuto |
-| Tester 3 | Android     | ✅             | Ricevuto |
-| Tester 4 | Android     | ✅             | Ricevuto |
-| Tester 5 | Android     | ✅             | Ricevuto |
+| ID | Dispositivo | Installazione | Feedback |
+|---|---|---|---|
+| Tester 1 | iPhone | ✅ | Ricevuto |
+| Tester 2 | Android | ✅ | Ricevuto |
+| Tester 3 | Android | ✅ | Ricevuto |
+| Tester 4 | Android | ✅ | Ricevuto |
+| Tester 5 | Android | ✅ | Ricevuto |
 
 ---
 
-## Domande per i tester
+## Verifiche richieste ai tester
 
-1. Sei riuscito a installare facilmente l'app?
-2. L'icona compare correttamente nella schermata Home?
-3. La navigazione ti sembra semplice?
-4. Hai trovato difficoltà?
-5. Quale funzione vorresti aggiungere?
+1. Installazione dell'app.
+2. Visualizzazione dell'icona nella schermata Home.
+3. Facilità di navigazione tra le sezioni.
+4. Ascolto delle puntate.
+5. Eventuali problemi o suggerimenti.
+6. Funzioni desiderate per versioni future.
 
 ---
 
 ## Problemi emersi
 
-* Alcuni utenti Android non trovano subito "Aggiungi alla schermata Home".
-* Alcuni dispositivi mostrano "Installa" o "Crea scorciatoia".
-* Su iPhone è necessario aprire il link con Safari.
+- Alcuni utenti Android non trovano subito la voce
+  "Aggiungi alla schermata Home".
+
+- Alcuni dispositivi mostrano diciture differenti:
+  - "Installa"
+  - "Crea scorciatoia"
+
+- Su iPhone è necessario aprire il collegamento tramite Safari
+  per poter utilizzare "Aggiungi alla schermata Home".
 
 ---
 
 ## Soluzioni adottate
 
-* Aggiornata la guida installazione.
-* Inserite spiegazioni per Android e apertura tramite WhatsApp.
-* In attesa di aggiungere gli screenshot per iPhone.
+- Aggiornata la guida installazione.
+- Inserite indicazioni specifiche per Android.
+- Inserita nota relativa all'apertura del link tramite WhatsApp.
+- Aggiunta procedura dedicata ad iPhone.
+- Inseriti screenshot nella guida installazione.
 
 ---
 
 ## Segnalazioni ricevute
 
-| Data        | Tester         | Problema                                        | Soluzione adottata                                                                    |
-| ----------- | -------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------- |
-| Luglio 2026 | Tester Android | Difficoltà iniziale nell'installazione dell'app | Fornite indicazioni per apertura tramite Chrome e procedura Installa/Crea scorciatoia |
+| Data | Tester | Segnalazione | Soluzione |
+|---|---|---|---|
+| Luglio 2026 | Tester Android | Difficoltà iniziale nell'installazione | Fornite indicazioni per apertura tramite Chrome e procedura Installa/Crea scorciatoia |
 
 ---
 
 ## Feedback positivi ricevuti
 
-* Applicazione giudicata semplice e intuitiva.
-* Navigazione chiara.
-* Installazione riuscita dopo le indicazioni.
-* Feedback positivo sui contenuti e sulla facilità d'uso.
+- Applicazione giudicata semplice e intuitiva.
+- Navigazione chiara.
+- Installazione riuscita dopo le indicazioni.
+- Apprezzamento per i contenuti audio e spirituali.
+- Esperienza positiva nell'utilizzo.
 
 ---
 
 ## Feedback generale
 
-Gli utenti hanno trovato Dialoghi Radio semplice e intuitiva.
+Il primo gruppo di tester ha valutato positivamente
+Dialoghi Radio Beta 1.0.0.
+
+Le principali indicazioni ricevute hanno riguardato
+la fase di installazione, successivamente migliorata
+attraverso la documentazione dedicata.
+
+I suggerimenti raccolti saranno utilizzati
+per eventuali sviluppi futuri.
+
+---
+
+❤️ Dialoghi Radio
