@@ -1,133 +1,149 @@
-# Come installare Dialoghi Radio sul telefono
+# Guida installazione - Dialoghi Radio
 
-## Cos'è Dialoghi Radio
+## Installare Dialoghi Radio sullo smartphone
 
-Dialoghi Radio è una web app pensata per ascoltare programmi, riflessioni, percorsi biblici e contenuti audio direttamente dal telefono.
+Dialoghi Radio è una Web App (PWA).
 
-Non è necessario scaricare un'app dal Play Store o App Store: puoi aprirla dal browser e aggiungerla alla schermata principale come una vera applicazione.
+Può essere installata sul dispositivo come un'applicazione,
+senza passare dagli store.
 
----
-
-# Installazione su Android
-
-## Metodo consigliato (Google Chrome)
-
-## 1. Apri il collegamento di Dialoghi Radio con **Google Chrome**:
-https://dialoghiradio.github.io/DR/
-
-<p align="center">
-  <img src="immagini_guida/01_apertura_link.png" width="350">
-</p>
+L'installazione permette di avere un'icona dedicata
+nella schermata principale dello smartphone.
 
 ---
 
-## 2. Apri il menu Chrome (i tre puntini ⋮ in alto a destra)
+# 📱 Android
 
-<p align="center">
-  <img src="immagini_guida/02_menu_tre_puntini.png" width="350">
-</p>
+## Installazione tramite Google Chrome
 
----
+1. Aprire Google Chrome.
 
-## 3. Installa l'app
-Cerca una delle seguenti opzioni:
+2. Visitare il sito ufficiale di Dialoghi Radio.
 
-* **Installa**
-* **Crea scorciatoia**
-* **Aggiungi alla schermata Home**
+3. Attendere il caricamento completo della pagina.
 
-*(la voce può cambiare in base al telefono)*
+4. Toccare i tre puntini ⋮ in alto a destra.
 
-<p align="center">
-   <img src="immagini_guida/03_menu_installazione.png" width="350">
-</p>
----
+5. Selezionare:
 
-## 4. Icona nella Home che conferma l'installazione
+   **Aggiungi a schermata Home**
 
+   oppure:
 
-<p align="center">
-  <img src="immagini_guida/04_icona_dialoghi_radio_home.png" width="350">
-</p>
----
+   **Installa app**
 
-## 5. App aperta dalla schermata Home
+6. Confermare l'installazione.
 
-<p align="center">
- <img src="immagini_guida/05_app_dialoghi_radio_aperta.png" width="350">
-</p>
----
+Al termine comparirà l'icona:
 
-### ⚠️ Se apri il link da WhatsApp
+🎧 Dialoghi Radio
 
-Alcuni telefoni aprono il link dentro WhatsApp e non mostrano le opzioni di installazione.
-
-In questo caso:
-
-1. Copia il link
-2. Apri **Google Chrome**
-3. Incolla il link
-4. Ripeti la procedura
-
----
-## Installazione su iPhone
-
-1. Apri il link di Dialoghi Radio con Safari.
-
-2. Premi il pulsante Condividi.
-
-3. Seleziona:
-"Aggiungi alla schermata Home"
-"Esempio schermata iPhone: scelta Aggiungi alla schermata Home"
-<p align="center">
- <img src="immagini_guida/06_iphone_aggiungi_home.png" width="350">
-</p>
-4. Conferma.
-
-L'icona Dialoghi Radio apparirà nella schermata principale.
-
----
-📌 Nota
-
-Le schermate possono variare leggermente a seconda della versione di iOS.
-
-Gli screenshot per iPhone verranno aggiunti nelle prossime versioni della guida.
-
-# Come condividere Dialoghi Radio
-
-Per invitare qualcuno ad ascoltare Dialoghi Radio è sufficiente condividere il link ufficiale.
-
-Esempio:
-
-> 🎙️ Ti condivido Dialoghi Radio
-> Una radio di parole, musica e riflessioni per accompagnare la giornata
->
-> Apri il link e puoi aggiungerla alla schermata Home come un'app
->
-> https://dialoghiradio.github.io/DR/
+nella schermata principale dello smartphone.
 
 ---
 
-# Nota importante
+# 🍎 iPhone / iPad
 
-Dialoghi Radio non è disponibile sul Play Store o App Store.
+## Installazione tramite Safari
 
-Funziona tramite browser ed è installabile come Web App.
+1. Aprire Safari.
+
+2. Visitare il sito ufficiale di Dialoghi Radio.
+
+3. Toccare il pulsante:
+
+   **Condividi**  
+   (icona quadrato con freccia verso l'alto)
+
+4. Scorrere il menu.
+
+5. Selezionare:
+
+   **Aggiungi alla schermata Home**
+
+6. Confermare con:
+
+   **Aggiungi**
+
+L'icona di Dialoghi Radio verrà aggiunta alla schermata Home.
 
 ---
 
-# Futuri sviluppi
+# 🔄 Aggiornamento dell'app
 
-Sono previste nuove funzioni:
+Dialoghi Radio viene aggiornata automaticamente
+quando vengono pubblicate nuove modifiche.
 
-* Menu laterale di navigazione
-* Ascolto Live
-* Palinsesto programmato
-* Integrazione con i social
-* Funzioni per la comunità degli ascoltatori
+In alcuni casi il dispositivo potrebbe mostrare
+una versione precedente.
 
 ---
 
-## Dialoghi Radio
+## 💻 Da PC
 
-Parole, musica e riflessioni per accompagnare la tua giornata.
+Per forzare l'aggiornamento:
+
+Premere:
+
+CTRL + F5
+
+---
+
+## 📱 Android
+
+Se l'app non mostra gli ultimi aggiornamenti:
+
+1. Chiudere completamente Dialoghi Radio.
+2. Chiudere Chrome dalle applicazioni recenti.
+3. Riaprire l'app.
+
+Se il problema continua:
+
+1. Aprire Chrome.
+2. Andare nelle impostazioni.
+3. Cancellare la cache del browser.
+4. Riavviare l'app.
+
+---
+
+## 🍎 iPhone / iPad
+
+Se l'app non si aggiorna:
+
+1. Chiudere Safari.
+2. Riaprire Dialoghi Radio.
+3. Aggiornare la pagina.
+
+Se necessario:
+
+1. Eliminare l'icona dalla schermata Home.
+2. Aprire nuovamente Safari.
+3. Aggiungere di nuovo Dialoghi Radio alla schermata Home.
+
+---
+
+# Condivisione dell'app
+
+Per invitare altre persone:
+
+1. Inviare il collegamento web di Dialoghi Radio.
+2. L'utente apre il collegamento dal proprio smartphone.
+3. Può installare l'app seguendo la procedura indicata.
+
+---
+
+# Note tecniche
+
+Dialoghi Radio utilizza tecnologia:
+
+- Web App installabile (PWA);
+- manifest.json;
+- icona dedicata;
+- layout ottimizzato per smartphone e PC.
+
+I contenuti audio vengono caricati automaticamente
+tramite i servizi ufficiali collegati al progetto.
+
+---
+
+❤️ Dialoghi Radio
