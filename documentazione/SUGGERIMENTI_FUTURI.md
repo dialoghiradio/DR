@@ -1,10 +1,5 @@
 # Suggerimenti futuri - Dialoghi Radio
 
-Raccolta delle idee e dei miglioramenti emersi durante la fase Beta.
-
----
-# Suggerimenti futuri - Dialoghi Radio
-
 Raccolta dei suggerimenti ricevuti durante la fase Beta.
 
 ---
