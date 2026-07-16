@@ -1,42 +1,57 @@
 <!DOCTYPE html>
+<!-- Dichiarazione HTML5 -->
+
 <html lang="it">
+<!-- Lingua della pagina: italiano -->
 
 <head>
 
 <meta charset="UTF-8">
+<!-- Supporto caratteri (accenti, emoji, ecc.) -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Adattamento per smartphone -->
 
 <title>Ascolta Dialoghi Radio</title>
+<!-- Titolo della pagina -->
 
 <link rel="stylesheet" href="stile.css">
+<!-- Collegamento al file CSS -->
 
 </head>
 
 <body>
 
 <header class="testata">
+<!-- Intestazione della pagina -->
 
 <img src="icona.png" class="logo" alt="Dialoghi Radio">
+<!-- Logo dell'app -->
 
 <h1>🎧 Ascolta Dialoghi Radio</h1>
+<!-- Titolo principale -->
 
 <p>Ultime puntate e archivio completo</p>
+<!-- Sottotitolo -->
 
 <a href="index.html" class="bottone">
 ⬅ Torna alla Home
 </a>
+<!-- Pulsante per tornare alla Home -->
 
 </header>
 
 <main>
+<!-- Contenuto principale -->
 
 <p>
 Scegli se ascoltare tutte le puntate oppure le ultime pubblicate di Dialoghi Radio.
 </p>
 
-<a href="https://castbox.fm/channel/id6422987" class="bottone" target="_blank">
+<a href="https://castbox.fm/channel/id6422987" class="bottone" target="_blank" id="tutte-puntate">
 📚 Tutte le puntate
 </a>
+<!-- Link esterno a Castbox -->
 
 <p>
 👉 Si aprirà Castbox con tutte le puntate disponibili.<br>
@@ -48,6 +63,7 @@ Tocca una puntata per iniziare l’ascolto oppure premi ▶️.
 </p>
 
 <hr>
+<!-- Separatore -->
 
 <h2>🎧 Ultime puntate</h2>
 
@@ -59,10 +75,12 @@ La raccolta si aggiorna automaticamente con le nuove puntate.
 <div id="episodi">
     Caricamento puntate...
 </div>
+<!-- Qui il file JS inserisce le puntate -->
 
 </main>
 
 <footer>
+<!-- Piè di pagina -->
 
 <p>
 ❤️ Dialoghi Radio
@@ -71,6 +89,7 @@ La raccolta si aggiorna automaticamente con le nuove puntate.
 </footer>
 
 <script src="ultime-puntate.js"></script>
+<!-- Collegamento al JavaScript che carica le puntate -->
 
 </body>
 
