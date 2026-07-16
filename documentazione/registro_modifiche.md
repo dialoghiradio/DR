@@ -72,7 +72,24 @@ La modifica nasce dall'obiettivo di rendere Dialoghi Radio:
 - più chiara nella navigazione;
 - più accessibile anche agli utenti meno esperti.
 
-
 ---
+
+## Stato versione Beta 1.0.0
+
+Data: luglio 2026
+
+La versione Beta 1.0.0 di Dialoghi Radio è stata completata
+e congelata come versione stabile di riferimento.
+
+La versione comprende:
+
+- applicazione funzionante;
+- documentazione aggiornata;
+- codice commentato;
+- struttura progetto organizzata;
+- materiale per tester Beta.
+
+Eventuali nuove modifiche o nuove funzionalità saranno sviluppate
+in versioni successive senza modificare questa versione di riferimento.
 
 ❤️ Dialoghi Radio
