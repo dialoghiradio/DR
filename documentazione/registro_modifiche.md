@@ -2,30 +2,77 @@
 
 ## Beta 1.0.0
 
-### Migliorie
+**Periodo:** luglio 2026
 
-Data: luglio 2026
+---
+
+# Migliorie principali
+
+## Riorganizzazione ascolto puntate
+
+Sono state apportate modifiche alla sezione dedicata all'ascolto.
+
+Modifiche effettuate:
 
 - Aggiornato il collegamento dalla Home.
-- Rinominato il pulsante in "🎧 Ascolta Dialoghi Radio".
+- Rinominato il pulsante principale in:
+  
+  🎧 Ascolta Dialoghi Radio
+
 - Aggiunto accesso all'archivio completo delle puntate tramite Castbox.
-- Riorganizzata la pagina ascolto:
+- Riorganizzata la pagina ascolto con due possibilità:
+
   - 📚 Tutte le puntate
-  - 🎧 Ultime puntate (ultimi 10 episodi automatici)
+    - archivio completo disponibile su Castbox
 
-### Migliorie di usabilità
+  - 🎧 Ultime puntate
+    - ultimi 10 episodi caricati automaticamente
 
-Problema:
-L’utente non sapeva come usare Castbox dopo il click su “Tutte le puntate”.
 
-Soluzione:
-Aggiunta una breve spiegazione sotto il pulsante con istruzioni semplici.
+---
 
-Risultato:
-L’utente riesce a proseguire e avviare l’ascolto senza difficoltà.
+# Migliorie di usabilità
 
-### Motivazione
 
-Rendere più semplice per gli utenti:
-- scegliere tra archivio completo e contenuti recenti;
-- comprendere cosa fare dopo l’apertura di Castbox.
+## Problema riscontrato
+
+L'utente, dopo aver aperto Castbox tramite il pulsante
+"Tutte le puntate", non aveva indicazioni su come procedere
+con l'ascolto.
+
+
+## Soluzione adottata
+
+È stata aggiunta una breve spiegazione sotto il pulsante
+con istruzioni semplici per:
+
+- aprire una puntata;
+- utilizzare il pulsante di riproduzione;
+- iniziare l'ascolto.
+
+
+## Risultato
+
+L'esperienza utente è stata migliorata.
+
+L'ascoltatore riesce ora a:
+
+- scegliere facilmente tra archivio completo e ultime pubblicazioni;
+- comprendere il funzionamento della sezione ascolto;
+- iniziare la riproduzione senza difficoltà.
+
+
+---
+
+# Motivazione del cambiamento
+
+La modifica nasce dall'obiettivo di rendere Dialoghi Radio:
+
+- più semplice da utilizzare;
+- più chiara nella navigazione;
+- più accessibile anche agli utenti meno esperti.
+
+
+---
+
+❤️ Dialoghi Radio
