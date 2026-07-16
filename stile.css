@@ -1,21 +1,44 @@
+/* ============================================
+   STILE GENERALE DELLA PAGINA
+   ============================================ */
+
 body {
+    /* Carattere principale */
     font-family: Arial, sans-serif;
+
+    /* Tutto il contenuto centrato */
     text-align: center;
+
+    /* Eliminazione margini e spazi predefiniti */
     margin: 0;
     padding: 20px;
+
+    /* Sfondo generale dell'app */
     background: #f5f5f5;
 }
 
 
-/* TESTATA RADIO */
+
+/* ============================================
+   TESTATA DELL'APP
+   Contiene logo, titolo e descrizione
+   ============================================ */
 
 .testata {
+
+    /* Sfondo bianco della scheda */
     background: white;
+
     padding: 25px;
+
+    /* Angoli arrotondati */
     border-radius: 25px;
+
     margin-bottom: 25px;
 }
 
+
+/* Logo Dialoghi Radio */
 
 .logo {
     width: 150px;
@@ -23,142 +46,255 @@ body {
 }
 
 
+
+/* Titolo principale */
+
 h1 {
     font-size: 36px;
     margin-bottom: 5px;
 }
 
 
+
 h2 {
+
+    /* Colore titoli secondari */
     color: #555;
+
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
 
+
 .testata p {
+
+    /* Dimensione descrizione nella testata */
     font-size: 18px;
+
 }
 
 
-/* ULTIMA PUNTATA */
+
+/* ============================================
+   BLOCCO ULTIMA PUNTATA
+   ============================================ */
 
 .ultima {
+
     background: white;
+
     padding: 20px;
+
     border-radius: 15px;
+
+    /* Ombra della scheda */
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
 }
 
 
-/* PUNTATE AUTOMATICHE */
+
+/* ============================================
+   ELENCO EPISODI CARICATI AUTOMATICAMENTE
+   ============================================ */
 
 #episodi div {
+
+    /* Ogni puntata viene visualizzata
+       come una scheda */
+
     background: white;
+
     padding: 15px;
+
     margin: 20px 0;
+
     border-radius: 20px;
+
 }
 
 
-/* LINK GENERALI */
+
+/* ============================================
+   LINK GENERICI
+   ============================================ */
 
 a {
+
     display: inline-block;
+
     margin-top: 20px;
+
     padding: 15px 25px;
+
     background: #222;
+
     color: white;
+
     text-decoration: none;
+
     border-radius: 30px;
+
     font-size: 18px;
+
 }
 
 
-/* PULSANTI APP */
+
+/* ============================================
+   PULSANTI PRINCIPALI DELL'APP
+   ============================================ */
 
 .bottone {
+
     display: inline-block;
+
     width: 220px;
+
     box-sizing: border-box;
+
     text-align: center;
+
     padding: 14px 20px;
+
     background: #007bff;
+
     color: white;
+
     text-decoration: none;
+
     border-radius: 30px;
+
     font-size: 18px;
+
     font-weight: bold;
+
     margin: 10px;
+
 }
 
+
+
+/* Effetto quando il mouse passa sopra */
 
 .bottone:hover {
+
     background: #0056b3;
+
 }
 
 
-/* Uniforma il bottone Info agli altri */
+
+/* Il pulsante Info è un button,
+   ma deve avere lo stesso stile */
 
 button.bottone {
+
     border: none;
+
     cursor: pointer;
+
     font-family: Arial, sans-serif;
+
 }
 
 
-/* VERSIONE MOBILE */
+
+/* ============================================
+   ADATTAMENTO SMARTPHONE
+   ============================================ */
 
 @media (max-width: 600px) {
 
+
+    /* Logo più piccolo su telefono */
+
     .logo {
+
         width: 70px;
+
         display: block;
+
         margin: 0 auto;
+
     }
 
+
+    /* Pulsanti a tutta larghezza */
 
     .bottone {
+
         display: block;
+
         width: 80%;
+
         margin: 15px auto;
+
     }
 
 }
 
 
-/* MAIN */
+
+/* ============================================
+   CONTENUTO PRINCIPALE
+   ============================================ */
 
 main {
+
     padding: 10px;
+
 }
 
 
-/* SPAZI */
+
+/* ============================================
+   SPAZIATURA ELEMENTI DINAMICI
+   ============================================ */
 
 #ultima-puntata {
+
     margin-top: 25px;
+
 }
+
 
 
 #episodi div {
+
     margin-bottom: 25px;
+
 }
 
 
-/* VERSIONE APP */
+
+/* ============================================
+   INDICAZIONE VERSIONE APP
+   ============================================ */
 
 .versione {
+
     display: block;
+
     margin-top: 10px;
+
     font-size: 14px;
+
     color: #777;
+
 }
 
 
-/* PIEDE */
+
+/* ============================================
+   PIEDE PAGINA
+   ============================================ */
 
 footer {
+
     margin-top: 30px;
+
     color: #777;
+
 }
