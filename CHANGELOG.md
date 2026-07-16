@@ -84,6 +84,30 @@ Prima versione Beta dell'app Dialoghi Radio.
 - Aggiornato il pulsante nella Home da "Apri ultime puntate" a "🎧 Ascolta Dialoghi Radio".
 - Aggiornata la guida installazione con screenshot iPhone.
 - Migliorata la documentazione per i tester Beta.
+
+## Beta 1.0.0
+
+### Miglioramento organizzazione codice JavaScript
+
+Data: luglio 2026
+
+Modifiche effettuate:
+- Ripristinata la corretta separazione tra i file JavaScript.
+- `app.js` dedicato alla gestione della Home:
+  - caricamento Percorso Biblico;
+  - visualizzazione ultime puntate.
+- `ultime-puntate.js` dedicato alla pagina ascolto:
+  - caricamento episodi;
+  - player Spreaker;
+  - gestione puntate già ascoltate.
+- Aggiunti commenti esplicativi nei file JavaScript per facilitare la lettura del progetto.
+
+Motivazione:
+Migliorare la comprensione del codice senza modificare il funzionamento dell'app.
+
+Risultato:
+Applicazione funzionante con struttura del codice più ordinata e documentata.
+
 ---
 
 ## Sviluppi futuri
