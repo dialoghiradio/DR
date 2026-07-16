@@ -1,139 +1,283 @@
 <!DOCTYPE html>
+<!-- Documento HTML5 -->
+
 <html lang="it">
 
+
 <head>
-  <meta charset="UTF-8">
 
-  <!-- Fondamentale per smartphone -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Guida utente - Dialoghi Radio</title>
-
-  <style>
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .contenitore {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 25px;
-      border-radius: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    }
-
-    h1 {
-      text-align: center;
-      color: #007bff;
-      font-size: 28px;
-    }
-
-    h2 {
-      color: #007bff;
-      margin-top: 30px;
-    }
-
-    h3 {
-      color: #555;
-    }
-
-    p {
-      font-size: 17px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .indietro {
-      display: block;
-      width: fit-content;
-      margin: 0 auto 20px auto;
-      padding: 12px 25px;
-      background: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-    }
+<meta charset="UTF-8">
+<!-- Supporto caratteri speciali e lettere accentate -->
 
 
-    /* Ottimizzazione smartphone */
+<!-- Fondamentale per smartphone -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Adattamento della pagina ai dispositivi mobili -->
 
-    @media (max-width: 600px) {
 
-      body {
-        padding: 10px;
-      }
+<title>Guida utente - Dialoghi Radio</title>
+<!-- Titolo della pagina -->
 
-      .contenitore {
-        padding: 18px;
-        border-radius: 15px;
-      }
 
-      h1 {
-        font-size: 24px;
-      }
+<style>
 
-      p, li {
-        font-size: 18px;
-      }
+/* ============================================
+   STILE PAGINA GUIDA UTENTE
+   ============================================ */
 
-    }
 
-  </style>
+body {
+
+  /* Carattere principale */
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+  padding: 20px;
+
+  background: #f5f5f5;
+
+  color: #333;
+
+  /* Altezza delle righe per facilitare la lettura */
+  line-height: 1.6;
+}
+
+
+
+/* Contenitore centrale della guida */
+
+.contenitore {
+
+  max-width: 800px;
+
+  margin: auto;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  /* Ombra della scheda */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* Titolo principale */
+
+h1 {
+
+  text-align: center;
+
+  color: #007bff;
+
+  font-size: 28px;
+
+}
+
+
+
+/* Titoli delle sezioni */
+
+h2 {
+
+  color: #007bff;
+
+  margin-top: 30px;
+
+}
+
+
+h3 {
+
+  color: #555;
+
+}
+
+
+p {
+
+  font-size: 17px;
+
+}
+
+
+li {
+
+  margin-bottom: 8px;
+
+}
+
+
+
+/* Pulsante ritorno alla home */
+
+.indietro {
+
+  display: block;
+
+  width: fit-content;
+
+  margin: 0 auto 20px auto;
+
+  padding: 12px 25px;
+
+  background: #007bff;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+
+}
+
+
+
+/* ============================================
+   ADATTAMENTO SMARTPHONE
+   ============================================ */
+
+@media (max-width: 600px) {
+
+
+  body {
+
+    padding: 10px;
+
+  }
+
+
+  .contenitore {
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+  }
+
+
+  h1 {
+
+    font-size: 24px;
+
+  }
+
+
+  p, li {
+
+    font-size: 18px;
+
+  }
+
+
+}
+
+
+</style>
+
 
 </head>
 
 
+
 <body>
+
+
+<!-- Contenitore principale della guida -->
 
 <div class="contenitore">
 
+
+
+<!-- Pulsante per tornare alla pagina principale -->
+
 <a href="index.html" class="indietro">
+
 ⬅ Torna a Dialoghi Radio
+
 </a>
 
 
+
+<!--
+    Area dove viene inserito automaticamente
+    il contenuto del file guida_utente.md
+-->
+
 <div id="contenuto">
+
 Caricamento guida...
-</div>
-
 
 </div>
 
+
+
+</div>
+
+
+
+<!-- Libreria che converte Markdown in HTML -->
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 
+
 <script>
+
+
+// ============================================
+// CARICAMENTO GUIDA UTENTE
+//
+// Il file:
+// - recupera guida_utente.md
+// - converte Markdown in HTML
+// - visualizza il risultato nella pagina
+// ============================================
+
+
+
+// Recupera il file Markdown dalla cartella documentazione
 
 fetch('documentazione/guida_utente.md')
 
+
+// Trasforma il contenuto ricevuto in testo
+
 .then(response => response.text())
+
+
+// Converte Markdown e lo inserisce nella pagina
 
 .then(text => {
 
+
 document.getElementById('contenuto').innerHTML = marked.parse(text);
+
 
 })
 
+
+// Gestione errore caricamento
+
 .catch(() => {
+
 
 document.getElementById('contenuto').innerText =
 "Errore nel caricamento guida";
 
+
 });
+
 
 </script>
 
 
+
 </body>
+
 </html>
