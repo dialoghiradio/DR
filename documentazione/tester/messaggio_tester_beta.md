@@ -1,4 +1,4 @@
-# Messaggio per tester Beta - Dialoghi Radio
+# Messaggio tester Beta 1.0.0 - Dialoghi Radio
 
 ## Obiettivo
 
@@ -72,5 +72,23 @@ Per avere risposte utili si possono chiedere:
 
 ## Note interne
 
+
 I suggerimenti dei tester saranno utilizzati per programmare
 le future versioni dell'app.
+
+---
+
+## Stato test
+
+Versione testata:
+
+Beta 1.0.0
+
+Periodo:
+
+Luglio 2026
+
+Obiettivo:
+
+Verificare semplicità di utilizzo,
+installazione e ascolto dei contenuti.
