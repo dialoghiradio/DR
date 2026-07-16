@@ -108,6 +108,20 @@ Migliorare la comprensione del codice senza modificare il funzionamento dell'app
 Risultato:
 Applicazione funzionante con struttura del codice più ordinata e documentata.
 
+### Raccolta feedback e suggerimenti Beta
+
+Data: luglio 2026
+
+Modifiche effettuate:
+- Creato il documento `SUGGERIMENTI_FUTURI.md`.
+- Raccolti i suggerimenti ricevuti dai tester durante la fase Beta.
+- Inserita la segnalazione relativa alla riproduzione audio in background.
+
+Motivazione:
+Conservare le idee di miglioramento emerse dai test senza modificare il funzionamento attuale dell'app.
+
+Risultato:
+I feedback dei tester sono organizzati per eventuali sviluppi futuri.
 ---
 
 ## Sviluppi futuri
