@@ -4,136 +4,171 @@
 
 Prima versione Beta dell'app Dialoghi Radio.
 
-### Funzioni introdotte
 
-- Collegamento al feed Spreaker
-- Visualizzazione automatica dell'ultima puntata
-- Sezione Percorso Biblico
-- Archivio delle ultime puntate
-- Navigazione tra Home e percorsi
-- Installazione come applicazione sul dispositivo
-- Gestione versione Beta
+---
 
-### Organizzazione dei contenuti
+## Funzioni introdotte
 
-- Creata sezione 📖 Percorso Biblico separata
-- Creata sezione 🎧 Ultime Puntate separata
-- Inseriti pulsanti di accesso dalla Home
-
-### Navigazione
-
-- Aggiunto pulsante "Torna alla Home" nelle sezioni interne
-- Struttura ottimizzata per PC e smartphone
-
-### Grafica
-
-- Inserita icona Dialoghi Radio
-- Adattamento logo per dispositivi mobili
-- Inserita indicazione versione Beta 1.0.0
-- Migliorati pulsanti e spaziature
-
-### Funzioni aggiunte dopo la prima release
-
-- Aggiunta descrizione della sezione "Ultime Puntate"
-- Inserita indicazione delle ultime 10 puntate aggiornate automaticamente
-- Aggiunta funzione "✅ Già ascoltata"
-- Possibilità per l'utente di aggiungere o rimuovere la spunta delle puntate ascoltate
-- Memorizzazione dello stato sul dispositivo dell'utente senza raccolta di dati personali
-
-### Comunicazione con gli ascoltatori
-
-- Aggiunta sezione 💬 Contatti e suggerimenti
-- Inserito collegamento email diretto per segnalazioni e proposte
-- Aggiunto messaggio di ringraziamento per chi contribuisce al miglioramento dell'app
+- Collegamento al feed Spreaker.
+- Visualizzazione automatica delle puntate.
+- Sezione 📖 Percorso Biblico.
+- Sezione 🎧 Ultime Puntate.
+- Navigazione tra Home e sezioni interne.
+- Installazione come Web App sul dispositivo.
+- Gestione versione Beta.
 
 
 ---
 
-## Sviluppo post Beta 1.0.0 - Luglio 2026
+## Organizzazione contenuti
 
-### Documentazione
+- Creata sezione dedicata al Percorso Biblico.
+- Creata sezione dedicata all'ascolto delle puntate.
+- Inseriti pulsanti di accesso dalla Home.
+- Aggiunto pulsante "Torna alla Home" nelle sezioni interne.
 
-- Aggiunta guida per installare Dialoghi Radio sullo smartphone
-- Spiegate le procedure per Android e iPhone
-- Inserite indicazioni per condividere il collegamento della web app
-- Preparata documentazione per futuri utenti
 
-### Gestione progetto
-
-- Creata una fase di sviluppo successiva alla release Beta 1.0.0
-- Mantenuta la versione Beta 1.0.0 come riferimento stabile
-- Backup del progetto salvato su PC e supporto USB
-- Creata una gestione ordinata delle versioni tramite release e commit GitHub
-
-### Guida utente integrata
-
-- Creata pagina interna "📘 Guida utente" accessibile direttamente dall'app
-- Collegata la guida al documento `documentazione/guida_utente.md`
-- Mantenuta una singola fonte per la documentazione utente
-- Migliorata la visualizzazione della guida su PC e smartphone
-- Ottimizzato il layout per una lettura più semplice senza necessità di zoom
-- Aggiunto pulsante per tornare alla Home di Dialoghi Radio
-
-### Aggiornamenti
-
-- Migliorata la sezione ascolto podcast.
-- Aggiunto collegamento all'archivio completo delle puntate tramite Castbox.
-- Riorganizzata la pagina "Ascolta Dialoghi Radio":
-  - 📚 Tutte le puntate
-  - 🎧 Ultime puntate (ultimi 10 episodi aggiornati automaticamente).
-- Aggiornato il pulsante nella Home da "Apri ultime puntate" a "🎧 Ascolta Dialoghi Radio".
-- Aggiornata la guida installazione con screenshot iPhone.
-- Migliorata la documentazione per i tester Beta.
-
-## Beta 1.0.0
-
-### Miglioramento organizzazione codice JavaScript
-
-Data: luglio 2026
-
-Modifiche effettuate:
-- Ripristinata la corretta separazione tra i file JavaScript.
-- `app.js` dedicato alla gestione della Home:
-  - caricamento Percorso Biblico;
-  - visualizzazione ultime puntate.
-- `ultime-puntate.js` dedicato alla pagina ascolto:
-  - caricamento episodi;
-  - player Spreaker;
-  - gestione puntate già ascoltate.
-- Aggiunti commenti esplicativi nei file JavaScript per facilitare la lettura del progetto.
-
-Motivazione:
-Migliorare la comprensione del codice senza modificare il funzionamento dell'app.
-
-Risultato:
-Applicazione funzionante con struttura del codice più ordinata e documentata.
-
-### Raccolta feedback e suggerimenti Beta
-
-Data: luglio 2026
-
-Modifiche effettuate:
-- Creato il documento `SUGGERIMENTI_FUTURI.md`.
-- Raccolti i suggerimenti ricevuti dai tester durante la fase Beta.
-- Inserita la segnalazione relativa alla riproduzione audio in background.
-
-Motivazione:
-Conservare le idee di miglioramento emerse dai test senza modificare il funzionamento attuale dell'app.
-
-Risultato:
-I feedback dei tester sono organizzati per eventuali sviluppi futuri.
 ---
 
-## Sviluppi futuri
+## Grafica e usabilità
 
-- Sviluppo del progetto "Accanto a Te"
-- Spazio ascoltatori
-- Nuovi percorsi tematici
-- Miglioramenti grafici
-- Nuove funzioni di interazione
-- Nuove categorie di contenuti
-- Eventuale sistema di notifiche aggiornamenti
-- Menu laterale di navigazione
-- Ascolto Live H24
-- Palinsesto programmato
-- Funzione di condivisione dell'applicazione
+- Inserita icona ufficiale Dialoghi Radio.
+- Adattato il logo per dispositivi mobili.
+- Inserita indicazione versione Beta 1.0.0.
+- Migliorati pulsanti, spaziature e leggibilità.
+- Struttura ottimizzata per PC e smartphone.
+
+
+---
+
+## Funzioni aggiunte durante la fase Beta
+
+- Aggiunta descrizione della sezione Ultime Puntate.
+- Inserito caricamento automatico degli ultimi 10 episodi.
+- Aggiunta funzione:
+
+  ✅ Già ascoltata
+
+- Possibilità di aggiungere o rimuovere la spunta delle puntate ascoltate.
+- Memorizzazione dello stato sul dispositivo tramite memoria locale.
+- Nessuna raccolta di dati personali.
+
+
+---
+
+## Comunicazione con gli ascoltatori
+
+- Creata sezione 💬 Contatti e suggerimenti.
+- Inseriti collegamenti email diretti.
+- Aggiunto messaggio di ringraziamento agli ascoltatori.
+
+
+---
+
+# Sviluppo successivo alla Beta 1.0.0
+
+
+## Documentazione
+
+- Creata guida utente interna.
+- Collegato il documento:
+
+`documentazione/guida_utente.md`
+
+- Inserite istruzioni per Android e iPhone.
+- Preparata documentazione per futuri utenti.
+- Migliorata la lettura della guida su PC e smartphone.
+
+
+---
+
+## Gestione progetto
+
+- Creato sistema ordinato di documentazione.
+- Salvato backup del progetto su PC e supporto USB.
+- Organizzata gestione versioni tramite GitHub.
+- Utilizzati commit per tracciare le modifiche.
+
+
+---
+
+## Miglioramento sezione ascolto
+
+- Aggiunto collegamento all'archivio completo tramite Castbox.
+- Riorganizzata la pagina:
+
+🎧 Ascolta Dialoghi Radio
+
+con:
+
+- 📚 Tutte le puntate
+- 🎧 Ultime puntate automatiche
+
+
+- Aggiornato il pulsante Home:
+da "Apri ultime puntate"
+
+a:
+
+🎧 Ascolta Dialoghi Radio
+
+
+---
+
+## Organizzazione codice JavaScript
+
+Separazione dei compiti tra file:
+
+### app.js
+
+Gestione Home:
+
+- caricamento Percorso Biblico;
+- caricamento ultime puntate nella Home;
+- gestione dei contenuti principali.
+
+
+### ultime-puntate.js
+
+Gestione pagina ascolto:
+
+- caricamento episodi;
+- player Spreaker;
+- gestione puntate ascoltate.
+
+
+Aggiunti commenti esplicativi al codice.
+
+
+---
+
+## Feedback Beta
+
+- Creato documento:
+
+`documentazione/SUGGERIMENTI_FUTURI.md`
+
+
+- Raccolti suggerimenti dei tester.
+- Inserita segnalazione relativa all'ascolto audio in background.
+
+
+---
+
+# Sviluppi futuri
+
+- Sviluppo del progetto "Accanto a Te".
+- Spazio ascoltatori.
+- Nuovi percorsi tematici.
+- Miglioramenti grafici.
+- Nuove categorie di contenuti.
+- Sistema notifiche aggiornamenti.
+- Menu laterale di navigazione.
+- Ascolto Live H24.
+- Palinsesto programmato.
+- Funzione condivisione applicazione.
+
+
+---
+
+❤️ Dialoghi Radio
