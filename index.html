@@ -1,26 +1,42 @@
 <!DOCTYPE html>
+<!-- HTML5 -->
+
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <!-- Supporto caratteri -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsive per smartphone -->
 
     <title>Dialoghi Radio</title>
+    <!-- Titolo pagina -->
 
     <link rel="stylesheet" href="stile.css">
+    <!-- Stile grafico -->
+
     <link rel="manifest" href="manifest.json">
+    <!-- PWA: permette installazione come app -->
+
     <link rel="icon" type="image/png" href="icona.png">
+    <!-- Icona browser/app -->
 </head>
 
 <body>
 
 <header class="testata">
+    <!-- Intestazione -->
 
     <img src="icona.png" class="logo" alt="Dialoghi Radio">
+    <!-- Logo -->
 
     <h1>Dialoghi Radio</h1>
+
     <p>La Siesta del Pane Quotidiano</p>
     <p>Parole, musica e riflessioni per accompagnare la tua giornata</p>
+
     <small class="versione">Beta 1.0.0</small>
+    <!-- Versione app -->
 </header>
 
 <main>
@@ -29,6 +45,7 @@
     <div id="ultima-puntata">
         Caricamento ultima puntata...
     </div>
+    <!-- Qui app.js inserisce l'ultima puntata -->
 
     <!-- 📚 PERCORSI -->
     <h2>📚 Percorsi</h2>
@@ -38,43 +55,44 @@
     </a>
 
     <!-- 🎧 ULTIME PUNTATE -->
-      <a href="ultime-puntate.html" class="bottone">
-     📻 Ascolta Dialoghi Radio
-     </a>
-	<!-- ℹ️ INFO -->
-	 <hr>
-
-     <button onclick="mostraInfo()" class="bottone">
-         ℹ️ Info
-     </button>
-	 
-	<!-- 💬 Contatti e suggerimenti -->
-    <hr>
-
-	 <a href="contatti.html" class="bottone">
-💬 Contatti e suggerimenti
+    <a href="ultime-puntate.html" class="bottone">
+        📻 Ascolta Dialoghi Radio
     </a>
 
-    <!-- 📘 GUIDA UTENTE -->
-   <a href="guida.html" class="bottone">
-📘 Guida utente
-   </a>
+    <!-- ℹ️ INFO -->
+    <hr>
+
+    <button onclick="mostraInfo()" class="bottone">
+        ℹ️ Info
+    </button>
+
+    <!-- 💬 CONTATTI -->
+    <hr>
+
+    <a href="contatti.html" class="bottone">
+        💬 Contatti e suggerimenti
+    </a>
+
+    <!-- 📘 GUIDA -->
+    <a href="guida.html" class="bottone">
+        📘 Guida utente
+    </a>
 
 </main>
 
 <footer>
-
 <p>
 ❤️ Dialoghi Radio
-<br>
-
 </p>
-
 </footer>
 
+<!-- Script Spreaker -->
 <script async src="https://widget.spreaker.com/widgets.js"></script>
+
+<!-- Script principale -->
 <script src="app.js"></script>
 
+<!-- BOX INFO NASCOSTO -->
 <div id="infoBox" style="display:none; padding:20px;">
   <h2>Dialoghi Radio</h2>
   <p>Versione Beta 1.0.0</p>
@@ -83,6 +101,7 @@
   <button onclick="chiudiInfo()">Chiudi</button>
 </div>
 
+<!-- SCRIPT INFO -->
 <script>
 
 function mostraInfo() {
@@ -97,6 +116,7 @@ function mostraInfo() {
 function chiudiInfo() {
   document.getElementById("infoBox").style.display = "none";
 }
+
 </script>
 
 </body>
