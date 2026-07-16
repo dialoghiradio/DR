@@ -1,39 +1,58 @@
 <!DOCTYPE html>
+<!-- HTML5 -->
+
 <html lang="it">
 
 <head>
 
 <meta charset="UTF-8">
+<!-- Supporto caratteri -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Responsive -->
 
 <title>Percorso Biblico - Dialoghi Radio</title>
+<!-- Titolo pagina -->
 
 <link rel="stylesheet" href="stile.css">
+<!-- Stile grafico -->
 
 </head>
 
-
 <body>
 
-<img src="icona.png" width="120" alt="Dialoghi Radio">
+<!-- Intestazione della pagina -->
+<header class="testata">
 
-<h1>📖 Percorso Biblico</h1>
+  <img src="icona.png" class="logo" alt="Dialoghi Radio">
+  <h1>📖 Percorso Biblico</h1>
+  
+</header>
 
-<p>
-Un cammino nella Parola di Dio attraverso la Bibbia.
-</p>
+<main>
 
-<a href="index.html" class="bottone">
-⬅ Torna alla Home
-</a>
+  <p>
+  Un cammino nella Parola di Dio attraverso la Bibbia.
+  </p>
+  
+  <br>
 
-<div id="percorso-biblico">
-Caricamento percorso biblico...
-</div>
+  <a href="index.html" class="bottone">
+  ⬅ Torna alla Home
+  </a>
 
+  <!-- Contenitore riempito dinamicamente da percorso-biblico.js -->
+  <div id="percorso-biblico">
+  🔄 Caricamento percorso biblico...
+  </div>
+
+</main>
+
+<footer>
+  ❤️ Dialoghi Radio
+</footer>
 
 <script src="percorso-biblico.js"></script>
-
 
 </body>
 
