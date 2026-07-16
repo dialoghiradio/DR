@@ -1,11 +1,10 @@
 # Struttura progetto - Dialoghi Radio
 
 Descrizione:
-Mappa dei file e delle funzionalità dell'app Dialoghi Radio.
+Mappa dei file e delle funzionalità dell'app Dialoghi Radio Beta 1.0.0.
 Serve per orientarsi rapidamente nel progetto e capire dove intervenire.
 
 Aggiornato: luglio 2026
-
 ---
 
 ## 📄 Pagine HTML
@@ -14,8 +13,8 @@ Aggiornato: luglio 2026
 |---|---|---|
 | index.html | Pagina principale dell'app | ✅ Attiva |
 | ultime-puntate.html | Archivio completo + ultime puntate | ✅ Attiva |
-| info.html | Informazioni sul progetto | ✅ Attiva |
-| suggerimenti.html | Raccolta suggerimenti e contatti | 🔄 In evoluzione |
+| percorso-biblico.html | Pagina dedicata al Percorso Biblico | ✅ Attiva |
+| contatti.html | Contatti e suggerimenti degli ascoltatori | ✅ Attiva |
 | guida.html | Guida all'utilizzo dell'app | ✅ Attiva |
 
 ---
@@ -24,9 +23,9 @@ Aggiornato: luglio 2026
 
 | File | Descrizione | Stato |
 |---|---|---|
-| app.js | Funzioni generali dell'app | ✅ Attivo |
-| ultime-puntate.js | Recupero automatico puntate | ✅ Attivo |
-
+| app.js | Gestione Home e caricamento contenuti principali | ✅ Attivo |
+| ultime-puntate.js | Recupero automatico ultime puntate e gestione ascolto | ✅ Attivo |
+| percorso-biblico.js | Recupero automatico contenuti Percorso Biblico | ✅ Attivo |
 ---
 
 ## 🎨 File grafici
@@ -46,7 +45,9 @@ Aggiornato: luglio 2026
 | guida_utente.md | Uso dell'app |
 | messaggio_tester_beta.md | Comunicazione tester |
 | registro_modifiche.md | Storico modifiche |
-| changelog.md | Versioni progetto |
+| CHANGELOG.md | Cronologia versioni progetto |
+| SUGGERIMENTI_FUTURI.md | Idee e sviluppi futuri del progetto |
+| tester/ | Documentazione fase Beta tester |
 
 ---
 
@@ -63,10 +64,10 @@ Aggiornato: luglio 2026
 
 | Azione utente | Percorso |
 |---|---|
-| Ascoltare tutte le puntate | Home → Ascolta → Castbox |
-| Ascoltare ultime puntate | Home → Ascolta → Ultime puntate |
-| Inviare suggerimento | Home → Suggerimenti → Modulo |
-
+| Ascoltare il percorso biblico | Home → Percorso Biblico |
+| Ascoltare tutte le puntate | Home → Ascolta Dialoghi Radio → Castbox (archivio completo) |
+| Ascoltare ultimi 10 episodi | Home → Ascolta Dialoghi Radio → Ultime puntate |
+| Inviare suggerimenti | Home → Contatti e suggerimenti |
 ---
 
 ## 🚧 In sviluppo / Idee future
@@ -77,3 +78,12 @@ Aggiornato: luglio 2026
 | Scenette teatrali | Collegamento Spreaker | 🟡 Da valutare |
 | Canti di chiesa | Sezione musicale | 🟡 Da valutare |
 | Modulo contatti | Messaggi utenti | 🟡 Evoluzione |
+
+---
+
+## Note tecniche
+
+- L'app è una Web App installabile (PWA).
+- I contenuti audio vengono caricati automaticamente tramite feed RSS Spreaker.
+- Gli episodi vengono visualizzati tramite player Spreaker.
+- Alcune funzioni utilizzano memoria locale del dispositivo senza raccolta dati personali.
