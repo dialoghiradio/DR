@@ -1,9 +1,28 @@
 # Cronologia aggiornamenti - Dialoghi Radio
 
+## Beta 1.0.1 - Luglio 2026
+
+### Miglioramenti
+
+- Rimossa la scritta "Caricamento ultima puntata" dalla Home.
+- Aggiornata la versione visualizzata nell'app.
+- Riordinato il menu Home mettendo "Contatti e suggerimenti" prima di "Info".
+- Migliorata la descrizione della sezione Guida.
+- Aggiornate le indicazioni della guida utente per installazione Android e iPhone/iPad.
+- Aggiunte le possibili voci di installazione Android:
+  - Installa
+  - Crea scorciatoia
+  - Aggiungi alla schermata Home.
+
+### Feedback tester applicati
+
+- Migliorata la visibilità delle sezioni principali.
+- Reso più chiaro il percorso per contattare Dialoghi Radio.
+- Raccolti e integrati suggerimenti ricevuti durante il ciclo di test Beta.
+
 ## Beta 1.0.0 - Luglio 2026
 
 Prima versione Beta dell'app Dialoghi Radio.
-
 
 ---
 
@@ -65,8 +84,7 @@ Prima versione Beta dell'app Dialoghi Radio.
 
 ---
 
-# Sviluppo successivo alla Beta 1.0.0
-
+# Sviluppi e aggiornamenti successivi alla Beta 1.0.0
 
 ## Documentazione
 
@@ -150,8 +168,7 @@ Aggiunti commenti esplicativi al codice.
 
 
 - Raccolti suggerimenti dei tester.
-- Inserita segnalazione relativa all'ascolto audio in background.
-
+- Inserita segnalazione relativa all'ascolto audio in background come possibile sviluppo futuro.
 
 ---
 
