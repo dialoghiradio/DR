@@ -1,6 +1,6 @@
 # 📻 Guida utente - Dialoghi Radio
 
-**Versione: Beta 1.0.0**
+**Versione: Beta 1.0.1**
 
 ---
 
@@ -23,11 +23,11 @@ di Dialoghi Radio.
 
 Dalla Home è possibile scegliere:
 
-- 🎧 Ascolto delle puntate
 - 📖 Percorso Biblico
+- 📻 Ascolta Dialoghi Radio
 - 💬 Contatti e suggerimenti
-- 📘 Guida utente
-
+- ℹ️ Info
+- 📘 Guida (come usare l’app)
 ---
 
 # Installazione dell'app
@@ -39,17 +39,39 @@ smartphone.
 
 1. Aprire il sito di Dialoghi Radio con Chrome.
 2. Premere il menu con i tre puntini.
-3. Selezionare "Aggiungi alla schermata Home".
+3. Selezionare una delle opzioni disponibili:
+
+   - "Installa"
+   - "Crea scorciatoia"
+   - "Aggiungi alla schermata Home"
+
+   *(la voce può cambiare in base al telefono)*
+
 4. Confermare l'installazione.
 
 L'app comparirà come un'applicazione normale sul telefono.
 
 ---
 
-## Ultime Puntate
+## iPhone / iPad
+
+Dialoghi Radio può essere installata anche su iPhone tramite Safari.
+
+1. Aprire il sito di Dialoghi Radio con Safari.
+2. Premere il pulsante Condividi.
+3. Selezionare "Aggiungi alla schermata Home".
+4. Confermare.
+
+L'icona Dialoghi Radio comparirà nella schermata principale
+e potrà essere aperta come una normale applicazione.
+
+---
+
+## Ascolta Dialoghi Radio (Ultime Puntate)
 
 La sezione **"Ascolta Dialoghi Radio"** permette di ascoltare
-le ultime puntate pubblicate.
+le ultime puntate pubblicate e accedere ai contenuti audio
+disponibili.
 
 Le puntate vengono aggiornate automaticamente.
 
