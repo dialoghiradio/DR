@@ -1,7 +1,7 @@
 # Struttura progetto - Dialoghi Radio
 
 Descrizione:
-Mappa dei file e delle funzionalità dell'app Dialoghi Radio Beta 1.0.0.
+Mappa dei file e delle funzionalità dell'app Dialoghi Radio Beta 1.0.1.
 Serve per orientarsi rapidamente nel progetto e capire dove intervenire.
 
 Aggiornato: luglio 2026
@@ -77,6 +77,7 @@ Aggiornato: luglio 2026
 | Accanto a Te | Richieste di preghiera | 🟡 Idea |
 | Scenette teatrali | Collegamento Spreaker | 🟡 Da valutare |
 | Canti di chiesa | Sezione musicale | 🟡 Da valutare |
+| Musica di accompagnamento | Possibile personalizzazione audio o ambiente musicale | 🟡 Da valutare |
 | Modulo contatti | Messaggi utenti | 🟡 Evoluzione |
 
 ---
@@ -86,4 +87,5 @@ Aggiornato: luglio 2026
 - L'app è una Web App installabile (PWA).
 - I contenuti audio vengono caricati automaticamente tramite feed RSS Spreaker.
 - Gli episodi vengono visualizzati tramite player Spreaker.
+- Castbox viene utilizzato come archivio esterno per l'ascolto completo delle puntate.
 - Alcune funzioni utilizzano memoria locale del dispositivo senza raccolta dati personali.
