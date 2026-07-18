@@ -52,3 +52,15 @@ Possibile sviluppo futuro:
 - creare uno spazio dedicato nella Home;
 - valutare gestione automatica delle frasi;
 - mantenere chiara la versione dell'app.
+
+## Suggerimento tester - Atmosfera musicale e immagini
+
+Possibile introduzione di:
+- immagini variabili nella Home;
+- eventuali musiche di accompagnamento;
+- ambientazione più accogliente all'apertura.
+
+Da valutare:
+- evitare riproduzioni automatiche invasive;
+- mantenere l'icona dell'app stabile;
+- preferire scelta dell'utente o attivazione volontaria.
