@@ -20,7 +20,6 @@ Nota:
 La funzione richiede una valutazione tecnica perché dipende dai limiti del browser e del sistema operativo.
 
 ---
----
 
 ## Suggerimento tester: musica di accoglienza all'apertura app
 
