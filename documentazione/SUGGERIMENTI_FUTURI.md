@@ -36,3 +36,19 @@ Possibile sviluppo futuro:
 
 Nota:
 Una musica automatica all'avvio potrebbe risultare poco adatta in alcuni contesti (luoghi pubblici, telefono silenzioso, preferenze personali). Eventuali funzioni audio di accoglienza dovranno essere valutate mantenendo semplicità e libertà di scelta.
+
+## Suggerimento: informazioni dinamiche nella Home
+
+Possibile inserimento nella pagina principale di:
+
+- data e ora visualizzate all'apertura;
+- indicazione ultimo aggiornamento;
+- frase del giorno o pensiero spirituale.
+
+Valutazione:
+L'idea può migliorare il senso di accoglienza dell'app, mantenendo però una Home semplice e non troppo piena.
+
+Possibile sviluppo futuro:
+- creare uno spazio dedicato nella Home;
+- valutare gestione automatica delle frasi;
+- mantenere chiara la versione dell'app.
