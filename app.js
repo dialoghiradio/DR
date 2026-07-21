@@ -20,15 +20,11 @@ fetch(
 
 .then(response => response.json())
 .then(data => {
-
 console.log("Feed ricevuto:", data);
-
 if(!data.items){
-
 console.error("Feed non disponibile");
 
 return;
-
 }
 
 // ============================================
@@ -39,11 +35,9 @@ const bibbia =
 document.getElementById("percorso-biblico");
 
 if(bibbia){
-
 data.items.forEach(ep => {
 
 if(ep.title.includes("[Percorso Biblico]")){
-
 const match =
 ep.guid.match(/(\d+)$/);
 
@@ -51,10 +45,8 @@ if(!match) return;
 
 const id =
 match[1];
-
 const elemento =
 document.createElement("div");
-
 elemento.innerHTML = `
 
 <h3>
@@ -71,15 +63,12 @@ allow="autoplay">
 </iframe>
 
 <hr>
-
 `;
 
 bibbia.appendChild(elemento);
 
 }
-
 });
-
 }
 
 // ============================================
@@ -90,14 +79,12 @@ const lista =
 document.getElementById("episodi");
 
 if(lista){
-
 data.items.slice(0,10).forEach(ep => {
 
 const match =
 ep.guid.match(/(\d+)$/);
 
 if(!match) return;
-
 const id =
 match[1];
 
@@ -120,20 +107,15 @@ allow="autoplay">
 </iframe>
 
 <hr>
-
 `;
 
 lista.appendChild(elemento);
 
 });
-
 }
-
 })
 
-
 .catch(error => {
-
 console.error(
 "Errore caricamento puntate:",
 error
@@ -143,10 +125,8 @@ const lista =
 document.getElementById("episodi");
 
 if(lista){
-
 lista.innerHTML =
 "Errore caricamento puntate";
-
 }
 
 });
@@ -158,15 +138,12 @@ const boxPensiero =
 document.getElementById("contenutoGiornaliero");
 
 if(boxPensiero){
-
 fetch("contenuti/pensieri.json")
 
 .then(response => response.json())
 .then(pensieri => {
-
     const indice =
     new Date().getDate() % pensieri.length;
-
     const pensiero =
     pensieri[indice];
 
@@ -183,17 +160,13 @@ fetch("contenuti/pensieri.json")
     </p>
 
     `;
-
 })
 
 .catch(error => {
-
     console.error(
         "Errore pensieri:",
         error
     );
-
 });
 
 }
-alert("APP.JS CARICATO");
