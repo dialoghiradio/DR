@@ -1,5 +1,29 @@
 # Registro modifiche - Dialoghi Radio
 
+## Beta 1.0.2
+
+Periodo: luglio 2026
+
+## Nuova sezione Home
+
+Aggiunta area:
+🌅 Oggi su Dialoghi Radio
+
+con caricamento dinamico del Pensiero del giorno.
+
+## Gestione contenuti
+
+Creato archivio:
+
+contenuti/pensieri.json
+
+per separare i testi dal codice.
+
+## Miglioramenti tecnici
+
+Aggiornato app.js con gestione sicura
+dei contenitori HTML presenti nella pagina.
+
 ## Beta 1.0.0
 
 **Periodo:** luglio 2026
