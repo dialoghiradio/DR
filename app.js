@@ -45,7 +45,7 @@ fetch(
 if (bibbia) {
 
 data.items.forEach(ep => {
-	  }
+
         // Controlla se il titolo contiene
         // il tag dedicato al Percorso Biblico
         if (ep.title.includes("[Percorso Biblico]")) {
@@ -131,6 +131,8 @@ data.items.forEach(ep => {
 
 })
 
+}
+	  
 // Gestione degli errori
 .catch(error => {
 
