@@ -143,7 +143,7 @@ fetch("contenuti/pensieri.json")
 .then(response => response.json())
 .then(pensieri => {
     const indice =
-    new Date().getDate() % pensieri.length;
+    (new Date().getDate() - 1) % pensieri.length;
     const pensiero =
     pensieri[indice];
 
