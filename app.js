@@ -289,3 +289,4 @@ fetch("contenuti/pensieri.json")
 });
 
 }
+alert("APP.JS CARICATO");
