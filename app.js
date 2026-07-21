@@ -38,8 +38,180 @@ fetch(
 // Elaborazione dei dati ricevuti
 .then(data => {
 
+// ============================================
+// 🌅 CONTENUTO GIORNALIERO
+// ============================================
+
+const oggi = new Date().toISOString().split("T")[0];
+
+const KEY_DATA = "dialoghi_data";
+const KEY_EPISODIO = "dialoghi_episodio";
+const KEY_PENSIERO = "dialoghi_pensiero";
+
+const boxGiorno = document.getElementById("contenutoGiornaliero");
+
+if (boxGiorno) {
+
+    let dataSalvata = localStorage.getItem(KEY_DATA);
+    let episodioSalvato = localStorage.getItem(KEY_EPISODIO);
+    let pensieroSalvato = localStorage.getItem(KEY_PENSIERO);
+
+    let episodio;
+    let pensiero;
 
 
+
+    // ============================================
+    // NUOVO GIORNO
+    // ============================================
+
+    if (dataSalvata !== oggi) {
+
+
+        // ----------------------------
+        // AUDIO DEL GIORNO
+        // ----------------------------
+
+        const ultimi = data.items.slice(0, 10);
+
+        episodio =
+            ultimi[Math.floor(Math.random() * ultimi.length)];
+
+
+
+        // ----------------------------
+        // PENSIERO DEL GIORNO
+        // ----------------------------
+
+        fetch("contenuti/pensieri.json")
+        .then(response => response.json())
+        .then(pensieri => {
+
+
+            let indice =
+                Number(localStorage.getItem("dialoghi_indice_pensiero")) || 0;
+
+
+            // ritorno al primo quando finisce
+            if (indice >= pensieri.length) {
+                indice = 0;
+            }
+
+
+            pensiero = pensieri[indice];
+
+
+            localStorage.setItem(
+                "dialoghi_indice_pensiero",
+                indice + 1
+            );
+
+
+            localStorage.setItem(
+                KEY_PENSIERO,
+                JSON.stringify(pensiero)
+            );
+
+
+            localStorage.setItem(KEY_DATA, oggi);
+
+            localStorage.setItem(
+                KEY_EPISODIO,
+                JSON.stringify(episodio)
+            );
+
+
+            mostraContenutoGiornaliero(
+                pensiero,
+                episodio
+            );
+
+
+        });
+
+
+    } else {
+
+
+        // stesso giorno
+
+        if (episodioSalvato) {
+            episodio = JSON.parse(episodioSalvato);
+        }
+
+
+        if (pensieroSalvato) {
+            pensiero = JSON.parse(pensieroSalvato);
+        }
+
+
+        mostraContenutoGiornaliero(
+            pensiero,
+            episodio
+        );
+
+    }
+
+}
+
+
+// ============================================
+// VISUALIZZAZIONE CONTENUTO GIORNALIERO
+// ============================================
+
+function mostraContenutoGiornaliero(pensiero, episodio) {
+
+
+    if (!episodio) return;
+
+
+    const id =
+        episodio.guid.match(/(\d+)$/)[1];
+
+
+    const titoloPulito =
+        episodio.title.replace(/\[.*?\]\s*/, "");
+
+
+
+    const testoPensiero =
+        pensiero ? pensiero.testo : "";
+
+
+
+    const boxGiorno =
+        document.getElementById("contenutoGiornaliero");
+
+
+
+    boxGiorno.innerHTML = `
+
+        <h3>🌅 Oggi su Dialoghi Radio</h3>
+
+        <p>✨ <strong>Pensiero del giorno</strong></p>
+
+        <p><em>
+        "${testoPensiero}"
+        </em></p>
+
+        <hr>
+
+        <p>🎧 <strong>Ascolto consigliato</strong></p>
+
+        <h4>${titoloPulito}</h4>
+
+
+        <iframe
+        src="https://widget.spreaker.com/player?episode_id=${id}&theme=light"
+        width="100%"
+        height="200"
+        frameborder="0"
+        allow="autoplay">
+        </iframe>
+
+    `;
+
+}
     // ============================================
     // SEZIONE PERCORSO BIBLICO
     // ============================================
@@ -168,8 +340,53 @@ fetch(
 
 
     });
+	
+function apriCategoria(nome) {
 
+    // Nascondi home se vuoi
+    document.getElementById("home").style.display = "none";
 
+    // Mostra area contenuti
+    document.getElementById("contenuti").style.display = "block";
+
+    mostraCategoria(nome, "contenuti");
+}
+
+function mostraCategoria(nomeCategoria, containerId) {
+
+    const container = document.getElementById(containerId);
+
+    container.innerHTML = "";
+
+    data.items.forEach(ep => {
+
+        if (ep.title.includes("[" + nomeCategoria + "]")) {
+
+            const id = ep.guid.match(/(\d+)$/)[1];
+
+            const titoloPulito = ep.title.replace("[" + nomeCategoria + "] ", "");
+
+            const elemento = document.createElement("div");
+
+            elemento.innerHTML = `
+                <h3>🎧 ${titoloPulito}</h3>
+
+                <iframe
+                src="https://widget.spreaker.com/player?episode_id=${id}&theme=light"
+                width="100%"
+                height="200"
+                frameborder="0"
+                allow="autoplay">
+                </iframe>
+
+                <hr>
+            `;
+
+            container.appendChild(elemento);
+        }
+
+    });
+}
 
 })
 
