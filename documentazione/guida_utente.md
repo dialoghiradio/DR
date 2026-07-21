@@ -1,6 +1,6 @@
 # 📻 Guida utente - Dialoghi Radio
 
-**Versione: Beta 1.0.1**
+**Versione: Beta 1.0.2**
 
 ---
 
@@ -20,6 +20,14 @@ riflettere e camminare insieme.
 
 La pagina principale permette di accedere alle funzioni disponibili
 di Dialoghi Radio.
+
+🌅 Oggi su Dialoghi Radio
+
+Nella parte superiore della Home è presente il Pensiero del giorno:
+
+una breve frase di riflessione;
+aggiornata automaticamente ogni giorno;
+pensata per accompagnare l’inizio della giornata.
 
 Dalla Home è possibile scegliere:
 
@@ -80,7 +88,10 @@ Per ascoltare:
 1. Aprire la sezione Ultime Puntate.
 2. Scegliere la puntata desiderata.
 3. Premere il pulsante ▶️ del lettore audio.
-
+4. Funzione "Già ascoltata"
+È possibile segnare una puntata come ascoltata.
+La selezione viene salvata automaticamente sul dispositivo.
+È possibile togliere la spunta in qualsiasi momento.
 ---
 
 # Percorso Biblico
