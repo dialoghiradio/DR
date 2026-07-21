@@ -43,9 +43,13 @@ fetch(feed + "?nocache=" + new Date().getTime())
 
 
     // Contenitore HTML dove verranno inserite le puntate
+
     const lista = document.getElementById("episodi");
 
-
+if(!lista){
+    console.error("Contenitore episodi non trovato");
+    return;
+}
 
     // Prende solamente le prime 10 puntate del feed
     items.slice(0,10).forEach(ep => {
@@ -61,8 +65,8 @@ fetch(feed + "?nocache=" + new Date().getTime())
 
 
         // Estrae dal link l'ID necessario per il player Spreaker
-        const match = link.match(/--(\d+)$/);
 
+        const match = link.match(/(\d+)$/);
 
         // Se l'ID non viene trovato salta questa puntata
         if (!match) return;
