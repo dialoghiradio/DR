@@ -12,7 +12,7 @@ visualizzazione dinamica nella Home;
 aggiornamento automatico giornaliero.
 
 ### Miglioramenti tecnici 
-
+Corretto l'indice di selezione del Pensiero del giorno per allineare la prima frase al primo giorno del ciclo.
 Migliorata gestione degli errori JavaScript:
 controlli sui contenitori HTML (if(elemento)).
 Reso più robusto il recupero ID episodi Spreaker.
