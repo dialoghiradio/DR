@@ -131,8 +131,15 @@ fetch(
 // Gestione degli errori
 .catch(error => {
 
-    // In caso di problemi mostra un messaggio
-    // nel contenitore delle puntate
-    document.getElementById("episodi").innerHTML =
-    "Errore caricamento puntate";
+    console.error(
+        "Errore caricamento puntate:",
+        error
+    );
+    const lista =
+    document.getElementById("episodi");
+
+    if(lista){
+        lista.innerHTML =
+        "Errore caricamento puntate";
+    }
 });
