@@ -1,7 +1,7 @@
 # Struttura progetto - Dialoghi Radio
 
 Descrizione:
-Mappa dei file e delle funzionalità dell'app Dialoghi Radio Beta 1.0.1.
+Mappa dei file e delle funzionalità dell'app Dialoghi Radio Beta 1.0.2.
 Serve per orientarsi rapidamente nel progetto e capire dove intervenire.
 
 Aggiornato: luglio 2026
@@ -11,7 +11,7 @@ Aggiornato: luglio 2026
 
 | File | Descrizione | Stato |
 |---|---|---|
-| index.html | Pagina principale dell'app | ✅ Attiva |
+| index.html | Pagina principale dell'app con sezione Oggi su Dialoghi Radio | ✅ Attiva |
 | ultime-puntate.html | Archivio completo + ultime puntate | ✅ Attiva |
 | percorso-biblico.html | Pagina dedicata al Percorso Biblico | ✅ Attiva |
 | contatti.html | Contatti e suggerimenti degli ascoltatori | ✅ Attiva |
@@ -23,7 +23,7 @@ Aggiornato: luglio 2026
 
 | File | Descrizione | Stato |
 |---|---|---|
-| app.js | Gestione Home e caricamento contenuti principali | ✅ Attivo |
+| app.js | Gestione Home, feed Spreaker, Percorso Biblico e Pensiero del giorno | ✅ Attivo |
 | ultime-puntate.js | Recupero automatico ultime puntate e gestione ascolto | ✅ Attivo |
 | percorso-biblico.js | Recupero automatico contenuti Percorso Biblico | ✅ Attivo |
 ---
@@ -51,6 +51,13 @@ Aggiornato: luglio 2026
 
 ---
 
+## 📦 Contenuti dinamici
+
+| File | Descrizione |
+|---|---|
+| contenuti/pensieri.json | Archivio dei Pensieri del giorno caricati automaticamente nella Home |
+|
+---
 ## 🎧 Contenuti audio
 
 | Servizio | Utilizzo |
@@ -64,6 +71,7 @@ Aggiornato: luglio 2026
 
 | Azione utente | Percorso |
 |---|---|
+| Leggere il Pensiero del giorno | Home → Oggi su Dialoghi Radio |
 | Ascoltare il percorso biblico | Home → Percorso Biblico |
 | Ascoltare tutte le puntate | Home → Ascolta Dialoghi Radio → Castbox (archivio completo) |
 | Ascoltare ultimi 10 episodi | Home → Ascolta Dialoghi Radio → Ultime puntate |
@@ -84,6 +92,8 @@ Aggiornato: luglio 2026
 
 ## Note tecniche
 
+- La Home utilizza il file JSON contenuti/pensieri.json per mostrare un pensiero giornaliero dinamico.
+- Il caricamento dei contenuti testuali avviene separatamente dal codice JavaScript.
 - L'app è una Web App installabile (PWA).
 - I contenuti audio vengono caricati automaticamente tramite feed RSS Spreaker.
 - Gli episodi vengono visualizzati tramite player Spreaker.
