@@ -41,8 +41,11 @@ fetch(
         document.getElementById("percorso-biblico");
 
     // Scorre tutti gli episodi presenti nel feed
-    data.items.forEach(ep => {
 
+if (bibbia) {
+
+data.items.forEach(ep => {
+	  }
         // Controlla se il titolo contiene
         // il tag dedicato al Percorso Biblico
         if (ep.title.includes("[Percorso Biblico]")) {
