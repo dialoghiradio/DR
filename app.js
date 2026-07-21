@@ -36,8 +36,10 @@ fetch(
 
 
 // Elaborazione dei dati ricevuti
+
 .then(data => {
 
+    console.log("RISPOSTA RSS2JSON:", data);
 // ============================================
 // 🌅 CONTENUTO GIORNALIERO
 // ============================================
