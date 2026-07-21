@@ -395,13 +395,13 @@ function mostraCategoria(nomeCategoria, containerId) {
 // Gestione degli errori
 .catch(error => {
 
+    console.error("Errore caricamento:", error);
 
+    const errore = document.getElementById("contenutoGiornaliero");
 
-    // In caso di problemi mostra un messaggio
-    // nel contenitore delle puntate
-    document.getElementById("episodi").innerHTML =
-    "Errore caricamento puntate";
-
-
+    if (errore) {
+        errore.innerHTML =
+        "Errore caricamento contenuti";
+    }
 
 });
