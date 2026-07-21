@@ -1,5 +1,31 @@
 # Cronologia aggiornamenti - Dialoghi Radio
 
+## Beta 1.0.2 - Luglio 2026
+
+Aggiunta sezione:
+
+🌅 Oggi su Dialoghi Radio
+
+Introduzione del Pensiero del giorno:
+caricamento automatico da file JSON (contenuti/pensieri.json);
+visualizzazione dinamica nella Home;
+aggiornamento automatico giornaliero.
+
+### Miglioramenti tecnici 
+
+Migliorata gestione degli errori JavaScript:
+controlli sui contenitori HTML (if(elemento)).
+Reso più robusto il recupero ID episodi Spreaker.
+Separazione più chiara tra:
+app.js (Home)
+ultime-puntate.js (pagina ascolto)
+
+### Struttura contenuti
+Introduzione file:
+contenuti/pensieri.json
+
+per gestione contenuti dinamici.
+
 ## Beta 1.0.1 - Luglio 2026
 
 ### Miglioramenti
@@ -144,7 +170,7 @@ Gestione Home:
 - caricamento Percorso Biblico;
 - caricamento ultime puntate nella Home;
 - gestione dei contenuti principali.
-
+- (aggiunto in 1.0.2: pensiero del giorno)
 
 ### ultime-puntate.js
 
