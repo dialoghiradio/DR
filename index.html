@@ -35,11 +35,19 @@
     <p>La Siesta del Pane Quotidiano</p>
     <p>Parole, musica e riflessioni per accompagnare la tua giornata</p>
 
-    <small class="versione">Beta 1.0.1</small>
+    <small class="versione">Beta 1.0.2</small>
     <!-- Versione app -->
 </header>
 
 <main>
+    <!-- 🌅 OGGI -->
+    <h2>🌅 Oggi su Dialoghi Radio</h2>
+
+    <div id="contenutoGiornaliero" class="box-giorno">
+        <p>Caricamento...</p>
+    </div>
+
+    <hr>
 
     <!-- 📚 PERCORSI -->
     <h2>📚 Percorsi</h2>
@@ -50,19 +58,21 @@
 
     <!-- 🎧 ULTIME PUNTATE -->
     <a href="ultime-puntate.html" class="bottone">
-        📻 Ascolta Dialoghi Radio
+        🎙️  Ascolta Dialoghi Radio
     </a>
+	
+    <hr>
 
     <!-- 💬 CONTATTI -->
-    <hr>
-    
+   
     <a href="contatti.html" class="bottone">
         💬 Contatti e suggerimenti
     </a>
-    
-    <!-- ℹ️ INFO -->
+
     <hr>
     
+    <!-- ℹ️ INFO -->
+ 
     <button onclick="mostraInfo()" class="bottone">
         ℹ️ Info
     </button>
@@ -77,9 +87,8 @@
 </main>
 
 <footer>
-<p>
-❤️ Dialoghi Radio
-</p>
+<p>❤️ Dialoghi Radio</p>
+
 </footer>
 
 <!-- Script Spreaker -->
@@ -91,7 +100,7 @@
 <!-- BOX INFO NASCOSTO -->
 <div id="infoBox" style="display:none; padding:20px;">
   <h2>Dialoghi Radio</h2>
-  <p>Versione Beta 1.0.1</p>
+  <p>Versione Beta 1.0.2</p>
   <p>© 2026 Salvatore Esposito</p>
   <p>Un progetto di ascolto e accompagnamento</p>
   <button onclick="chiudiInfo()">Chiudi</button>
