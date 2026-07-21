@@ -2,8 +2,26 @@
 
 ## Stato progetto
 
+Versione: Beta 1.0.2
+Aggiungere data aggiornamento
+Inserire nuova verifica:
+
+✅ Funzione aggiunta:
+
+Pensiero del giorno caricato automaticamente da contenuti/pensieri.json
+
+✅ File verificati:
+
+app.js aggiornato con gestione Home
+ultime-puntate.js gestione ascolto separata
+pensieri.json contenuti giornalieri
+
+Stato:
+
+Beta 1.0.2 in sviluppo/test
 Versione:
-Beta 1.0.0
+
+## Beta 1.0.0
 
 Data congelamento:
 Luglio 2026
