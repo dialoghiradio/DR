@@ -235,3 +235,57 @@ lista.innerHTML =
 
 
 });
+// ============================================
+// 🌅 PENSIERO DEL GIORNO
+// ============================================
+
+const boxPensiero =
+document.getElementById("contenutoGiornaliero");
+
+
+if(boxPensiero){
+
+fetch("contenuti/pensieri.json")
+
+.then(response => response.json())
+
+.then(pensieri => {
+
+
+    const indice =
+    new Date().getDate() % pensieri.length;
+
+
+    const pensiero =
+    pensieri[indice];
+
+
+    boxPensiero.innerHTML = `
+
+    <h3>🌅 Oggi su Dialoghi Radio</h3>
+
+    <p>
+    ✨ <strong>Pensiero del giorno</strong>
+    </p>
+
+    <p>
+    <em>
+    "${pensiero.testo}"
+    </em>
+    </p>
+
+    `;
+
+
+})
+
+.catch(error => {
+
+    console.error(
+        "Errore pensieri:",
+        error
+    );
+
+});
+
+}
