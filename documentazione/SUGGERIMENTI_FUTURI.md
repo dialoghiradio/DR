@@ -39,19 +39,33 @@ Una musica automatica all'avvio potrebbe risultare poco adatta in alcuni contest
 
 ## Suggerimento: informazioni dinamiche nella Home
 
+### Stato attuale
+
+Inserito il sistema del pensiero del giorno tramite file:
+- pensieri.json
+- selezione automatica della frase
+
+La Home può mostrare un contenuto variabile giornaliero.
+
+### Possibili sviluppi futuri
+
 Possibile inserimento nella pagina principale di:
 
 - data e ora visualizzate all'apertura;
 - indicazione ultimo aggiornamento;
-- frase del giorno o pensiero spirituale.
+- versione dell'app;
+- eventuali comunicazioni o news audio.
 
 Valutazione:
+
 L'idea può migliorare il senso di accoglienza dell'app, mantenendo però una Home semplice e non troppo piena.
 
-Possibile sviluppo futuro:
-- creare uno spazio dedicato nella Home;
-- valutare gestione automatica delle frasi;
-- mantenere chiara la versione dell'app.
+Principio da mantenere:
+
+La Home deve rimanere chiara:
+- pochi elementi;
+- lettura immediata;
+- contenuti ordinati.
 
 ## Suggerimento tester - Atmosfera musicale e immagini
 
