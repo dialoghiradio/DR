@@ -13,7 +13,6 @@ L'obiettivo è creare uno spazio semplice dove ascoltare,
 riflettere e camminare insieme.
 
 ---
-
 # Utilizzo dell'app
 
 ## Home
@@ -21,21 +20,20 @@ riflettere e camminare insieme.
 La pagina principale permette di accedere alle funzioni disponibili
 di Dialoghi Radio.
 
-🌅 Oggi su Dialoghi Radio
-
 Nella parte superiore della Home è presente il Pensiero del giorno:
 
-una breve frase di riflessione;
-aggiornata automaticamente ogni giorno;
-pensata per accompagnare l’inizio della giornata.
+- una breve frase di riflessione;
+- aggiornata automaticamente ogni giorno;
+- pensata per accompagnare l’inizio della giornata.
 
 Dalla Home è possibile scegliere:
 
 - 📖 Percorso Biblico
-- 📻 Ascolta Dialoghi Radio
+- 📻 Vai all'ascolto
 - 💬 Contatti e suggerimenti
 - ℹ️ Info
 - 📘 Guida (come usare l’app)
+
 ---
 
 # Installazione dell'app
@@ -75,23 +73,31 @@ e potrà essere aperta come una normale applicazione.
 
 ---
 
-## Ascolta Dialoghi Radio (Ultime Puntate)
+## 📻 Vai all'ascolto
 
-La sezione **"Ascolta Dialoghi Radio"** permette di ascoltare
-le ultime puntate pubblicate e accedere ai contenuti audio
-disponibili.
+Dalla Home, il pulsante **"Vai all'ascolto"** apre la sezione
+**"Ascolta Dialoghi Radio"**.
 
-Le puntate vengono aggiornate automaticamente.
+In questa sezione è possibile:
+
+- ascoltare gli ultimi episodi disponibili;
+- accedere all'archivio completo degli episodi.
+
+La raccolta degli ultimi episodi si aggiorna automaticamente.
 
 Per ascoltare:
 
-1. Aprire la sezione Ultime Puntate.
-2. Scegliere la puntata desiderata.
-3. Premere il pulsante ▶️ del lettore audio.
-4. Funzione "Già ascoltata"
-È possibile segnare una puntata come ascoltata.
+1. Scegliere un episodio tra gli ultimi disponibili oppure aprire l'archivio completo.
+2. Premere il pulsante ▶️ del lettore audio.
+
+### Funzione "Già ascoltata"
+
+È possibile segnare un episodio come ascoltato.
+
 La selezione viene salvata automaticamente sul dispositivo.
+
 È possibile togliere la spunta in qualsiasi momento.
+
 ---
 
 # Percorso Biblico
@@ -103,29 +109,19 @@ Le puntate vengono caricate automaticamente
 e organizzate nella sezione dedicata.
 
 ---
-
 # Contatti e suggerimenti
 
-La sezione Contatti permette agli ascoltatori di comunicare
-con Dialoghi Radio.
+La sezione **Contatti e suggerimenti** permette agli ascoltatori
+di comunicare con Dialoghi Radio.
 
 È possibile inviare:
 
-- ⚠️ una segnalazione di problema;
-- 💡 un suggerimento per migliorare l'app;
-- ⭐ una recensione o una testimonianza.
+- ⚠️ una segnalazione di problemi o difficoltà nell'utilizzo dell'app;
+- 💡 un suggerimento per migliorare Dialoghi Radio;
+- ⭐ una recensione, un pensiero o una testimonianza.
 
-Le categorie aiutano a gestire meglio i messaggi ricevuti.
-
----
-
-# Collaborazione
-
-Dialoghi Radio cresce anche grazie al contributo degli ascoltatori
-e dei collaboratori.
-
-Idee, suggerimenti e segnalazioni sono importanti per migliorare
-continuamente il progetto.
+I messaggi degli ascoltatori aiutano a migliorare continuamente
+il progetto.
 
 ---
 
@@ -152,17 +148,22 @@ per effettuare un aggiornamento completo della pagina.
 
 ## 📱 Android
 
-Se hai installato l'app tramite Chrome:
+Se hai installato l'app tramite Chrome e non visualizzi gli ultimi aggiornamenti:
 
 ### Svuotare la cache
 
 1. Apri Chrome.
 2. Tocca i tre puntini in alto a destra.
-3. Vai su Impostazioni.
-4. Tocca Privacy e sicurezza.
-5. Seleziona Cancella dati di navigazione.
-6. Seleziona "Immagini e file memorizzati nella cache".
-7. Conferma.
+3. Vai su **Impostazioni**.
+4. Tocca **Privacy e sicurezza**.
+5. Seleziona **Elimina dati navigazione**.
+6. Seleziona **Immagini e file memorizzati nella cache**.
+7. Tocca **Elimina dati**.
+8. Se disponibile, seleziona solo:
+   
+   `dialoghiradio.github.io`
+
+9. Conferma l'eliminazione.
 
 ### Riavviare l'app
 
