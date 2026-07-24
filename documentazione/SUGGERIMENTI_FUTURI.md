@@ -6,17 +6,24 @@ Raccolta delle idee e dei miglioramenti emersi durante la fase Beta.
 
 ### Riproduzione in background
 
-Suggerimento tester:
+Feedback iniziale tester:
 
 > L'app si sente benissimo, unica pecca che se esci dall'app non continua a sentire a differenza di Spreaker.
 
-Possibile sviluppo futuro:
-- valutare una soluzione per mantenere la riproduzione audio in background;
-- migliorare l'ascolto con schermo spento;
-- analizzare eventuali possibilità offerte dalle PWA.
+Verifica effettuata:
 
-Nota:
-La funzione richiede una valutazione tecnica perché dipende dai limiti del browser e del sistema operativo.
+La riproduzione in background è risultata funzionante
+su dispositivo mobile.
+
+È possibile:
+- ridurre a icona Dialoghi Radio;
+- spegnere lo schermo;
+- utilizzare altre applicazioni durante l'ascolto.
+
+Possibili sviluppi futuri:
+- continuare a monitorare la compatibilità
+  con diversi dispositivi;
+- migliorare ulteriormente l'esperienza audio.
 
 ---
 

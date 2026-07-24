@@ -3,11 +3,12 @@
 # Progetto: Dialoghi Radio
 
 ## 24/07/2026
-- Versione stabile pubblicata
-- Guida utente aggiornata
-- Correzione testi "Ultimi episodi"
-- Backup eseguito (PC + USB)
-- Git sincronizzato (working tree clean)# NOTE_PROGETTO.md
+
+- Versione Beta 1.0.2 in fase di verifica.
+- Guida utente aggiornata.
+- Correzione testi "Ultimi episodi".
+- Backup eseguito (PC + USB).
+- Verifica finale delle modifiche in ambiente DR-TEST.
 
 ## Stato attuale
 
@@ -17,8 +18,11 @@ Ambiente di sviluppo:
 
 * Visual Studio Code
 * Live Server
-* Git
-* GitHub
+* Git/GitHub per DR-PRODUZIONE
+
+Ambiente di test:
+
+* DR-TEST locale senza collegamento Git
 
 ## Repository GitHub
 
@@ -64,6 +68,12 @@ Git push
 GitHub aggiornato
 ↓
 App aggiornata
+
+Nota:
+
+Le nuove modifiche vengono prima provate nella cartella DR-TEST.
+Solo dopo la verifica vengono trasferite nella versione DR-PRODUZIONE
+e pubblicate tramite GitHub.
 
 ## Ambiente di prova
 
@@ -144,10 +154,10 @@ Possibili sviluppi:
 * archivio audio giornalieri;
 * news audio;
 * repertorio del coro con:
-
   * testi dei canti;
   * registrazioni audio;
   * materiale del gruppo.
+* Esplora contenuti con categorie tematiche;
 
 ## Note di sviluppo
 
@@ -181,6 +191,9 @@ Modificato il pulsante di accesso all'ascolto:
 
 Prima: 🎙️ Ascolta Dialoghi Radio
 Dopo: ▶️ Vai all’ascolto
+
+La pagina di destinazione è rimasta la sezione
+"Ascolta Dialoghi Radio".
 
 Motivo della modifica:
 
@@ -231,8 +244,15 @@ La modifica è stata verificata su smartphone tramite Live Server.
 
 ### File modificati in DR-TEST
 
+Modifiche verificate:
+
 * index.html
 * ultime-puntate.html
+* STRUTTURA_PROGETTO.md
+* NOTE_PROGETTO.md
+
+Altri file già aggiornati nella fase precedente:
+
 * contatti.html
 * stile.css
 
@@ -243,4 +263,5 @@ Le modifiche sono attualmente presenti in DR-TEST.
 
 Il passaggio a DR-PRODUZIONE verrà effettuato dopo la verifica finale.
 
-git commit -m "Migliorata navigazione audio e grafica app"
+Commit previsto al termine della verifica finale:
+"Migliorata navigazione audio e grafica app"

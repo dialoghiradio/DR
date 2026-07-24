@@ -13,19 +13,21 @@ L'obiettivo è creare uno spazio semplice dove ascoltare,
 riflettere e camminare insieme.
 
 ---
-# Utilizzo dell'app
 
-## Home
+## Utilizzo dell'app
+
+### Home
 
 La pagina principale permette di accedere alle funzioni disponibili
 di Dialoghi Radio.
 
-Nella parte superiore della Home è presente il Pensiero del giorno:
+Nella parte superiore della Home sono presenti:
 
-- una breve frase di riflessione;
-- aggiornata automaticamente ogni giorno;
-- pensata per accompagnare l’inizio della giornata.
-
+- la data dell'ultimo aggiornamento dell'app;
+- il Pensiero del giorno:
+  una breve frase di riflessione aggiornata automaticamente ogni giorno,
+  pensata per accompagnare l’inizio della giornata.
+  
 Dalla Home è possibile scegliere:
 
 - 📖 Percorso Biblico
@@ -36,12 +38,12 @@ Dalla Home è possibile scegliere:
 
 ---
 
-# Installazione dell'app
+## Installazione dell'app
 
 Dialoghi Radio può essere installata come Web App sul proprio
 smartphone.
 
-## Android
+### Android
 
 1. Aprire il sito di Dialoghi Radio con Chrome.
 2. Premere il menu con i tre puntini.
@@ -59,7 +61,7 @@ L'app comparirà come un'applicazione normale sul telefono.
 
 ---
 
-## iPhone / iPad
+### iPhone / iPad
 
 Dialoghi Radio può essere installata anche su iPhone tramite Safari.
 
@@ -100,16 +102,17 @@ La selezione viene salvata automaticamente sul dispositivo.
 
 ---
 
-# Percorso Biblico
+## Percorso Biblico
 
 Il Percorso Biblico accompagna l'ascoltatore in un cammino
 attraverso la Parola di Dio.
 
-Le puntate vengono caricate automaticamente
-e organizzate nella sezione dedicata.
+Gli episodi vengono caricati automaticamente
+e organizzati nella sezione dedicata.
 
 ---
-# Contatti e suggerimenti
+
+## Contatti e suggerimenti
 
 La sezione **Contatti e suggerimenti** permette agli ascoltatori
 di comunicare con Dialoghi Radio.
@@ -125,7 +128,23 @@ il progetto.
 
 ---
 
-# 🔄 Aggiornamenti e problemi di visualizzazione
+## ℹ️ Info
+
+La sezione **Info** contiene alcune informazioni su Dialoghi Radio.
+
+Sono disponibili:
+
+- la versione dell'app;
+- informazioni sul progetto;
+- indicazioni sulle funzionalità disponibili.
+
+Nella sezione Info è presente anche una nota sull'ascolto in background.
+Dopo aver avviato un contenuto audio è possibile ridurre a icona
+Dialoghi Radio o spegnere lo schermo del telefono e continuare
+l'ascolto mentre si utilizzano altre applicazioni.
+---
+
+## 🔄 Aggiornamenti e problemi di visualizzazione
 
 Dialoghi Radio è una Web App.
 
@@ -191,7 +210,7 @@ Se il problema continua:
 
 ---
 
-# Aggiornamenti futuri
+## 🚧 Evoluzione del progetto
 
 Dialoghi Radio è un progetto in continua evoluzione.
 

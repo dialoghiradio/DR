@@ -11,7 +11,7 @@ Aggiornato: luglio 2026
 
 | File | Descrizione | Stato |
 |---|---|---|
-| index.html | Pagina principale dell'app con sezione Oggi su Dialoghi Radio | ✅ Attiva |
+| index.html | Pagina principale dell'app con Pensiero del giorno, news audio e accesso alle funzioni principali | ✅ Attiva |
 | ultime-puntate.html | Archivio completo + ultime puntate | ✅ Attiva |
 | percorso-biblico.html | Pagina dedicata al Percorso Biblico | ✅ Attiva |
 | contatti.html | Contatti e suggerimenti degli ascoltatori | ✅ Attiva |
@@ -23,7 +23,7 @@ Aggiornato: luglio 2026
 
 | File | Descrizione | Stato |
 |---|---|---|
-| app.js | Gestione Home, feed Spreaker, Percorso Biblico e Pensiero del giorno | ✅ Attivo |
+| app.js | Gestione Home, contenuti dinamici e Pensiero del giorno | ✅ Attivo |
 | ultime-puntate.js | Recupero automatico ultime puntate e gestione ascolto | ✅ Attivo |
 | percorso-biblico.js | Recupero automatico contenuti Percorso Biblico | ✅ Attivo |
 ---
@@ -36,18 +36,18 @@ Aggiornato: luglio 2026
 | immagini_guida/ | Screenshot guida installazione |
 
 ---
-
 ## 📚 Documentazione
 
 | File | Descrizione |
 |---|---|
-| guida_installazione.md | Installazione Android/iPhone |
-| guida_utente.md | Uso dell'app |
-| messaggio_tester_beta.md | Comunicazione tester |
-| registro_modifiche.md | Storico modifiche |
-| CHANGELOG.md | Cronologia versioni progetto |
-| SUGGERIMENTI_FUTURI.md | Idee e sviluppi futuri del progetto |
-| tester/ | Documentazione fase Beta tester |
+| guida_installazione.md | Installazione Web App su Android/iPhone |
+| guida_utente.md | Utilizzo dell'app e spiegazione delle funzioni |
+| messaggio_tester_beta.md | Comunicazione e indicazioni per i tester |
+| registro_modifiche.md | Storico dettagliato delle modifiche effettuate |
+| CHANGELOG.md | Cronologia sintetica delle versioni del progetto |
+| SUGGERIMENTI_FUTURI.md | Idee, miglioramenti e sviluppi futuri |
+| CATEGORIE_CONTENUTI.md | Definizione categorie per futura funzione Esplora contenuti |
+| tester/ | Documentazione della fase Beta tester |
 
 ---
 
@@ -71,7 +71,7 @@ Aggiornato: luglio 2026
 
 | Azione utente | Percorso |
 |---|---|
-| Leggere il Pensiero del giorno | Home → Oggi su Dialoghi Radio |
+| Leggere il Pensiero del giorno | Home → Pensiero del giorno |
 | Ascoltare il percorso biblico | Home → Percorso Biblico |
 | Ascoltare tutte le puntate | Home → Ascolta Dialoghi Radio → Castbox (archivio completo) |
 | Ascoltare ultimi 10 episodi | Home → Ascolta Dialoghi Radio → Ultime puntate |
@@ -87,6 +87,7 @@ Aggiornato: luglio 2026
 | Canti di chiesa | Sezione musicale | 🟡 Da valutare |
 | Musica di accompagnamento | Possibile personalizzazione audio o ambiente musicale | 🟡 Da valutare |
 | Modulo contatti | Messaggi utenti | 🟡 Evoluzione |
+| Esplora contenuti | Suddivisione episodi per categorie tematiche | 🟡 Idea |
 
 ---
 
@@ -96,6 +97,6 @@ Aggiornato: luglio 2026
 - Il caricamento dei contenuti testuali avviene separatamente dal codice JavaScript.
 - L'app è una Web App installabile (PWA).
 - I contenuti audio vengono caricati automaticamente tramite feed RSS Spreaker.
-- Gli episodi vengono visualizzati tramite player Spreaker.
-- Castbox viene utilizzato come archivio esterno per l'ascolto completo delle puntate.
+- Gli ultimi episodi vengono visualizzati tramite player Spreaker.
+- L'archivio completo delle puntate è disponibile tramite Castbox.
 - Alcune funzioni utilizzano memoria locale del dispositivo senza raccolta dati personali.

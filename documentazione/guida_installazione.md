@@ -210,19 +210,6 @@ In caso di problemi:
 
 ---
 
-# 🚧 Futuri sviluppi
-
-Dialoghi Radio è un progetto in continua evoluzione.
-
-Sono previsti possibili sviluppi:
-
-- nuovi percorsi tematici;
-- spazio ascoltatori;
-- notifiche aggiornamenti;
-- nuove funzioni di interazione;
-- miglioramenti dell'esperienza di ascolto.
-
----
 
 ❤️ Dialoghi Radio
 
