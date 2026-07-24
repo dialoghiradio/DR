@@ -2,6 +2,13 @@
 
 # Progetto: Dialoghi Radio
 
+## 24/07/2026
+- Versione stabile pubblicata
+- Guida utente aggiornata
+- Correzione testi "Ultimi episodi"
+- Backup eseguito (PC + USB)
+- Git sincronizzato (working tree clean)# NOTE_PROGETTO.md
+
 ## Stato attuale
 
 Progetto web per una piccola app di contenuti audio e pensieri del giorno.
