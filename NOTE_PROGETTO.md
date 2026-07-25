@@ -125,6 +125,116 @@ Esempio:
 
 Il pensiero viene scelto in base al giorno.
 
+aggiunto saluto dinamico in base all'orario;
+aggiunta dissolvenza del Pensiero del giorno all'apertura della Home.
+
+## Esperimenti DR-TEST - luglio 2026
+## Esperimenti DR-TEST - luglio 2026
+
+Durante la fase di prova sono state sperimentate alcune migliorie
+dell'esperienza utente dell'app.
+
+### ✅ Esperimento 1 — Saluto dinamico
+
+Aggiunto un saluto automatico sotto la data della Home
+in base all'orario del dispositivo:
+
+- 🌅 Buongiorno
+- ☀️ Buon pomeriggio
+- 🌙 Buonasera
+
+La funzione è stata testata modificando temporaneamente
+l'orario del dispositivo.
+
+---
+
+### ✅ Esperimento 2 — Messaggio variabile di benvenuto
+
+La descrizione iniziale della Home è stata resa dinamica
+in base al momento della giornata.
+
+Messaggi utilizzati:
+
+- 🌅 Mattina:
+  "Inizia la giornata con un momento di ascolto e riflessione."
+
+- ☀️ Pomeriggio:
+  "Un momento di pausa con parole e musica."
+
+- 🌙 Sera:
+  "Concludi la giornata con un tempo di ascolto e serenità."
+
+La funzione è stata testata verificando il cambio automatico
+del messaggio.
+
+---
+
+### ✅ Esperimento 3 — Contatore episodi ascoltati
+
+Aggiunto nella pagina "Ascolta Dialoghi Radio"
+un contatore degli episodi segnati come ascoltati.
+
+La funzione utilizza il sistema già presente
+basato su memoria locale del dispositivo:
+
+`localStorage`
+
+Il conteggio visualizza:
+
+🎧 Episodi già ascoltati: numero
+
+Verifica effettuata:
+
+- segnando un episodio come ascoltato il numero aumenta;
+- togliendo la spunta "Già ascoltata" il numero diminuisce;
+- il conteggio rimane sincronizzato con la lista degli episodi selezionati.
+
+Nessun dato viene raccolto esternamente.
+
+---
+
+### ✅ Esperimento 4 — Dissolvenza Pensiero del giorno
+
+Aggiunto un effetto di comparsa graduale del box:
+
+✨ Pensiero del giorno
+
+all'apertura della Home.
+
+L'effetto è stato mantenuto leggero per non rallentare
+il caricamento della pagina.
+
+---
+
+### ✅ Esperimento 5 — Ultimo aggiornamento più dinamico
+
+Modificata la visualizzazione dell'aggiornamento app.
+
+Prima:
+
+Aggiornamento app:
+24/07/2026
+
+Dopo:
+
+📻 App aggiornata il 24/07/2026
+
+La modifica rende l'informazione più naturale
+e coerente con il tema Dialoghi Radio.
+
+---
+
+## Stato esperimenti
+
+Tutte le funzioni sono state:
+
+- provate in ambiente DR-TEST;
+- verificate tramite Live Server;
+- controllate su smartphone.
+
+Il passaggio in DR-PRODUZIONE verrà effettuato
+dopo la verifica finale.
+
 ## Audio
 
 Gli audio vengono inseriti nella cartella:

@@ -168,7 +168,18 @@ if(!lista){
 
 
     });
+const boxContatore =
+document.getElementById("contatore-ascolti");
 
+if(boxContatore){
+
+    const ascoltate =
+    JSON.parse(localStorage.getItem("puntateAscoltate")) || [];
+
+    boxContatore.innerHTML =
+    "🎧 Episodi già ascoltati: " + ascoltate.length;
+
+}
 
 });
 

@@ -138,7 +138,8 @@ const boxPensiero =
 document.getElementById("contenutoGiornaliero");
 
 if(boxPensiero){
-fetch("contenuti/pensieri.json")
+  boxPensiero.style.opacity = "0";
+  fetch("contenuti/pensieri.json")
 
 .then(response => response.json())
 .then(pensieri => {
@@ -160,6 +161,14 @@ fetch("contenuti/pensieri.json")
     </p>
 
     `;
+
+setTimeout(() => {
+
+    boxPensiero.style.transition = "opacity 1.5s";
+    boxPensiero.style.opacity = "1";
+
+}, 300);
+
 })
 
 .catch(error => {

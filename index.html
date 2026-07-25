@@ -34,11 +34,13 @@
     <div class="versione">Beta 1.0.2</div>
 
    <div id="data-oggi"></div>
+   <div id="saluto"></div>
 <p class="sottotitolo">La Siesta del Pane Quotidiano</p>
-<p class="descrizione">Parole, musica e riflessioni per accompagnare la tua giornata</p>
+<p id="descrizione-dinamica" class="descrizione">
+Parole, musica e riflessioni per accompagnare la tua giornata
+</p>
     <div class="ultimo-aggiornamento">
-    <div>Aggiornamento app:</div>
-    <div>24/07/2026</div>
+    📻 App aggiornata il 25/07/2026
     </div>
    </header>
 
@@ -160,6 +162,37 @@ const opzioni = {
 
 document.getElementById("data-oggi").innerHTML =
     oggi.toLocaleDateString('it-IT', opzioni);
+
+const ora = new Date().getHours();
+
+let messaggio = "";
+
+if (ora < 12) {
+    messaggio = "🌅 Buongiorno";
+} 
+else if (ora < 18) {
+    messaggio = "☀️ Buon pomeriggio";
+} 
+else {
+    messaggio = "🌙 Buonasera";
+}
+
+document.getElementById("saluto").innerHTML = messaggio;
+
+let descrizione = "";
+
+if (ora < 12) {
+    descrizione = "Inizia la giornata con un momento di ascolto e riflessione.";
+}
+else if (ora < 18) {
+    descrizione = "Un momento di pausa con parole e musica.";
+}
+else {
+    descrizione = "Concludi la giornata con un tempo di ascolto e serenità.";
+}
+
+document.getElementById("descrizione-dinamica").innerHTML = descrizione;
+
 </script>
 </body>
 </html>
