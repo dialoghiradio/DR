@@ -1,6 +1,12 @@
 # NOTE_PROGETTO.md
 
-# Progetto: Dialoghi Radio
+# Progetto: Dialoghi Radio - Ambiente DR-PRODUZIONE
+
+Repository:
+Dialoghi Radio ufficiale
+
+Scopo:
+versione stabile pubblicata agli utenti.
 
 ## 24/07/2026
 
@@ -368,6 +374,10 @@ Altri file già aggiornati nella fase precedente:
 
 
 ### Stato aggiornamento
+
+- Salvato backup del progetto su PC e supporto USB.
+- Organizzata gestione versioni tramite GitHub.
+- Utilizzati commit per tracciare le modifiche.
 
 Le modifiche sono attualmente presenti in DR-TEST.
 

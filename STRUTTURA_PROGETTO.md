@@ -1,4 +1,10 @@
-# Struttura progetto - Dialoghi Radio
+# Struttura progetto - Dialoghi Radio - Ambiente DR-PRODUZIONE
+
+Repository:
+Dialoghi Radio ufficiale
+
+Scopo:
+versione stabile pubblicata agli utenti.
 
 Descrizione:
 Mappa dei file e delle funzionalità dell'app Dialoghi Radio Beta 1.0.2.

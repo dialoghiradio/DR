@@ -1,4 +1,12 @@
-# Cronologia aggiornamenti - Dialoghi Radio
+# CHANGELOG.md
+
+# Dialoghi Radio - Cronologia aggiornamenti
+
+Ambiente:
+DR-PRODUZIONE
+
+Repository:
+versione ufficiale pubblica
 
 ## Beta 1.0.2 - Luglio 2026
 
@@ -129,9 +137,6 @@ Prima versione Beta dell'app Dialoghi Radio.
 ## Gestione progetto
 
 - Creato sistema ordinato di documentazione.
-- Salvato backup del progetto su PC e supporto USB.
-- Organizzata gestione versioni tramite GitHub.
-- Utilizzati commit per tracciare le modifiche.
 
 
 ---
