@@ -309,3 +309,67 @@ footer {
 #contenutoGiornaliero strong {
     font-size: 20px;
 }
+/* ============================================
+   📻 Modalità Radio
+   ============================================ */
+
+.radio-attiva {
+    animation: lampeggioRadio 1.5s infinite;
+}
+
+
+@keyframes lampeggioRadio {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+/* ============================================
+   📻 Controlli radio
+   ============================================ */
+
+#statoRadio {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+
+#controlliRadio {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+#controlliRadio button {
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#playRadio {
+    background-color: #5a8f6a;
+}
+
+#stopRadio {
+    background-color: #a65a5a;
+}
+
+iframe {
+    position: relative;
+    z-index: 10;
+}

@@ -59,7 +59,7 @@ src="https://widget.spreaker.com/player?episode_id=${id}&theme=light"
 width="100%"
 height="200"
 frameborder="0"
-allow="autoplay">
+allow="autoplay; encrypted-media; picture-in-picture">
 </iframe>
 
 <hr>
@@ -103,7 +103,7 @@ src="https://widget.spreaker.com/player?episode_id=${id}&theme=light"
 width="100%"
 height="200"
 frameborder="0"
-allow="autoplay">
+allow="autoplay; encrypted-media; picture-in-picture">
 </iframe>
 
 <hr>
@@ -161,7 +161,6 @@ if(boxPensiero){
     </p>
 
     `;
-
 setTimeout(() => {
 
     boxPensiero.style.transition = "opacity 1.5s";
@@ -178,4 +177,59 @@ setTimeout(() => {
     );
 });
 
+
+// ============================================
+// 📻 MODALITÀ RADIO
+// ============================================
+
+const audioRadio = document.getElementById("audioRadio");
+const statoRadio = document.getElementById("statoRadio");
+const playRadio = document.getElementById("playRadio");
+const stopRadio = document.getElementById("stopRadio");
+
+
+if(audioRadio && statoRadio && playRadio && stopRadio){
+
+    playRadio.addEventListener("click", function(){
+
+        if(audioRadio.paused){
+
+            audioRadio.play();
+
+            playRadio.innerHTML = "⏸️ Pausa";
+
+            statoRadio.innerHTML = "🔴 In onda... 📡";
+            statoRadio.classList.add("radio-attiva");
+
+        } else {
+
+            audioRadio.pause();
+
+            playRadio.innerHTML = "▶️ Play";
+
+            statoRadio.innerHTML = "⏸️ In pausa";
+            statoRadio.classList.remove("radio-attiva");
+
+        }
+
+    });
+
+
+    stopRadio.addEventListener("click", function(){
+
+        audioRadio.pause();
+
+        audioRadio.currentTime = 0;
+
+        audioRadio.load();
+
+        playRadio.innerHTML = "▶️ Play";
+
+        statoRadio.innerHTML = "";
+
+        statoRadio.classList.remove("radio-attiva");
+
+    });
+
+}
 }
